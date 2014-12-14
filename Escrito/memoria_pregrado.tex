@@ -2,7 +2,6 @@
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 
-\usepackage[pdftex]{graphicx}
 \usepackage{subfigure}
 \usepackage{algorithm}
 \usepackage{algorithmic}
@@ -22,9 +21,8 @@
 \usepackage{longtable}
 \usepackage{subfigure}
 \usepackage{tabularx}
-\usepackage[dvips]{epsfig}
+\usepackage[pdftex]{graphicx}
 \usepackage[centertags]{amsmath}
-\usepackage[size=normalsize]{caption}
 \usepackage{newlfont}
 \usepackage{psfrag}
 \usepackage{amsfonts}
@@ -166,8 +164,8 @@ urlcolor=cyan,
 \chapter{Introducción}
     \input{include/introduccion}
 
-%\chapter{Gamification}
-%    \input{include/gamification}
+\chapter{Gamification}
+    \input{include/gamification}
 
 \chapter{Descripción del problema}
     \input{include/descripcion_problema}
@@ -182,10 +180,7 @@ urlcolor=cyan,
     \input{include/conclusiones}
 
 \singlespacing
-\bibliographystyle{alpha}
-%\bibliographystyle{plain}
-\nocite{*} %quitar para mostrar s?lo lar referencias citadas.
+\bibliographystyle{plain}
 \bibliography{references}
-
 \end{document}
 
