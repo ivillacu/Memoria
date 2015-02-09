@@ -1,119 +1,182 @@
-En esta secciòn se describira a fondo la solucion propuesta para mejorar la problemtica de las pequeñas
-empresas para competir en lo referente a comercio electronico con sus pares mayores.
- \red{volver para escribir las secciones}
+La presente sección consiste en la presentación de la solución escogida
+para mejorar la problemática de las pequeñas empresas para competir en lo
+referente a comercio electrónico con sus pares mayores.
 
-\section{Metodologia de la soluciòn}
+\section{Metodología de la solución}
 
-La idea para dar solucion a la problematica de las micro empresas, para atraer y retener clientes y
-con esto competir, con empresas de mayor tamaño tiene como base la utilizacion de herramientas gratis
-o de bajo costo para crear una tienda virtual que logre competir con sitios web de empresas de mayor
-tamaño. Debido a la bajo presupuesto que poseen los empresarios pequeños esta web debe cumplir con 
-ciertas caracteristicas:
+La idea para dar solución a la problemática de las micro empresas,
+que consiste en atraer y retener clientes, para así poder competir
+con empresas de mayor tamaño, tiene como base el uso de una herramienta
+OpenSource, para así crear una tienda virtual atractiva a los usuarios
+y que pueda estar a la altura de grandes sitios web.
+
+Las siguientes características son necesarias para poder implementar un sistema
+web enfocado a una pequeña empresa, que no posee los recursos necesarios
+para un gran despliegue web:
 
 \begin{itemize}
+    \item {\bf Bajo costo:}
+        Debido al bajo capital que poseen micro o pequeñas empresas,
+        ésta característica es bastante crucial.
+        La poca viabilidad de utilizar soluciones completas ofrecidas
+        por empresas externas, nos lleva a poder utilizar una o más herramientas
+        que en su conjunto emulen a un sistema completo que necesita ser
+        implementado.
 
-\item Bajo costo: Debido a los pocos capitales que posee la micro o pequeña empresa, esta caracteristica es 
-bastante importante. No es viable utilizar soluciones web con costos elevados que luego habra que desenvolsar
-mas dinero para poder adecuarla a los requerimientos del empleador. 
-\item Facilidad de configuracion: Existen diversas herramientas que ayudan a un negocio emergente a crear
-una web, pero pocas estan pensadas para ser configuradas por el usuario. Esta caracteristica es importante
-ya que es posible que la persona encargada de la instalacion y configuracion no sea conocedor de la tecnologia
-y deba instruirse sobre la herramienta.
-\item Facilidad de administracion: Caracteristica clave dentro de la solucion planteada. El sistema sera 
-administrado, la mayoria del tiempo, por el dueño de la empresa que debe ser capaz de hacer tareas en la web
-de manera rapida y si no posee el conocimiento debe ser facil de aprender y ejecutar. Esto debido a que el capital
-humano en este tamaño de empresas, micro o pequeña, es disminuido y por lo tanto el tiempo dedicado a cada tarea
-es menor.
+    \item {\bf Facilidad de configuración:}
+        Existen diversas herramientas que ayudan a un negocio emergente a crear
+        una web, pero pocas estan pensadas para ser configuradas por un usuario
+        sin tantos contenidos tecnológicos.
+        Esta característica es vital, pues como ya mencionamos,
+        se necesita una personas con los conocimientos necesarios tanto
+        de instalación como configuración, los cuales pueden ser solucionados
+        con la contratación de una persona externa.
+
+    \item {\bf Facilidad de administración:}
+        Característica clave dentro de la solución planteada.
+        El sistema sera administrado, la mayoria del tiempo, por el dueño de la
+        empresa, el cual debe ser capaz de hacer tareas en el sistema
+        de manera rápida y frecuentemente, por lo que un grado
+        de complejidad en términos de administración jugarán en contran
+        a la hora de poder aprovechar el sistema a disposición.
+        Adicionalmente, se necesita un sistema de administración rápido,
+        para evitar estar mucho tiempo realizando una tarea simple, que
+        además de conocimientos del sistema, pueden ser provocados por sistemas
+        que no poseen una implementación de funcionalidades ordenadas.
 
 \end{itemize}
 
-Una vez creada la tienda virtual, la empresa entra a competir electronicamente, pero en desventaja,
-con empresas de mayor capital y por ende con tiendas virtuales de mayor tamaño y que utilizan conceptos
-para atraer y retener a los clientes. Para poder competir directamente, es necesario utilizar estos mismo 
-conceptos para poder alcanzar, de cierta forma, el nivel de visitas y ventas de estos grandes sitios web.
+Una vez creada la tienda virtual, la empresa entra a competir electrónicamente,
+pero en desventaja, con empresas de mayor capital y por ende con tiendas virtuales
+de mayor tamaño y que utilizan conceptos para atraer y retener a los clientes.
+Para poder competir directamente, es necesario utilizar estos mismo conceptos para
+poder alcanzar, de cierta forma, el nivel de visitas y ventas de estos grandes
+sitios web.
 
-Para poder disminuir la brecha entre la solucion propuesta y una tienda virtaul de gran tamaño utilizaremos el
-concepto de \emph{gamification}. Esta idea ayudara a la tienda a atraer y retener clientes con la utilizacion
-de conceptos del desarrollo de juegos. Los que se implementaran en la solucion seran:
+Para poder disminuir la brecha entre la solución propuesta y una tienda virtual
+de gran tamaño utilizaremos el concepto de {\GAM}.
+Esta idea ayudará a la tienda a atraer y retener clientes con la utilización
+de conceptos del desarrollo de juegos, que ya se han mencionado en éste documento,
+de los cuales se han seleccionado los siguientes elementos, como parte
+de un esquema clave a implementar:
 
 \begin{itemize}
+    \item {\bf Puntuación:}
+        Esta herramienta consiste en la entrega de puntos por la realización
+        de tareas definidas o compras en la tienda virtual.
+        \cmf{Cuales son las tareas definidas?}
+        Estos puntos son equivalentes a crédito en la tienda y pueden ser
+        utilizados como parte de pago.
+        Estos son utilizados para que los clientes vuelvan a comprar a la tienda,
+        utilizando créditos generados por él mismo.
+        \cmf{Ya estamos en la sección solución, así que creo que esto debería
+        ser más específico. Cuantos puntos hay por venta, por invitar amigos,
+        no sé, por cualquier mecanismo, y de la misma forma, como estos puntos
+        se traducen a dinero para comprar en el sitio? o cada producto cuesta
+        X pesos, Y puntos}
 
-\item Puntos: Esta herramienta conciste en la entrega de puntos por la realizacion de tareas definidas o compras
- en la tienda virtual. Estos puntos son equivalentes a credito en la tienda y pueden ser utilizados como 
-parte de pago. Estos son utilizados para que los clientes vuelvan a comprar a la tienda.
-\item Achievements: Medallas coleccionables entregadas a los clientes realizando tareas definidas. Esta 
-recompensa es utilizada con el fin de entregar sensacion de exito al cliente y asi tener motivacion para volver
-a la tienda.
-\item Referals: Invitaciones de usuarios de la tienda que son entregadas a posibles clientes para que estos 
-conozcan y compren en la tienda. Esta herramienta entrega un beneficio mutuo tanto al que hizo la imvitacion
-como al invitado una vez que realize una tarea definida. Esto es utilizado para atraer clientes con similares
-gustos a la tienda.
+    \item {\bf Achievements (logros):}
+        Medallas coleccionables entregadas a los clientes realizando tareas
+        definidas.
+        \cmf{Qué tareas definidas?}
+        Esta recompensa es utilizada con el fin de entregar la sensación de éxito,
+        e importancia en entre otros compradores y asi mantener una motivación
+        de seguir comprando y su estado dentro de la comunidad.
+
+    \item {\bf Referals (Referencias):}
+        Invitaciones de usuarios de la tienda que son entregadas a posibles
+        clientes para que estos conozcan y compren en la tienda.
+        Esta herramienta entrega un beneficio mutuo tanto al que hizo la invitación
+        como al invitado, una vez que realize una tarea definida.
+        \cmf{Qué tarea definida?}
+        Esto es utilizado para atraer clientes con gustos similares
+        a la tienda, pues el usuario que entregue invitaciones, lo hará a su
+        grupo cercano, y así sucesivamente.
 
 \end{itemize}
+\cmf{Por qué usas palabras en inglés si el sitio está en inglés?
+para dar cercanía con los términos de juegos reales? o para hacer el nexo
+con los elementos de {\GAM} ?}
 
-Al unir la tienda virtual con las ideas propuestas dadas por \emph{gamification} se crea un sistema de ventas online
-capaz de competir con tiendas que poseen mas capital y experiencia en este ambito.
-
+Al unir la tienda virtual con las ideas propuestas dadas por {\GAM} se crea un
+sistema de ventas online capaz de competir con tiendas que poseen más capital
+y experiencia en este ambito.
+\cmf{Realmente se logra? o es el sistema que queda a la misma altura?
+pues las grandes tiendas usan muchos más métodos de atracción de clientes.
+No está mal decir que el sistema queda similar, pero no sé si se pueda
+realizar una competencia directa}
 
 \section{Herramientas}
 
-Para implementar la solucion propuesta se necesito el uso de variadas herramientas. En un principio estas
-serian desarrolladas especificamente para realizar las tareas requeridas pero debido al limitado tiempo
-disponible se tomo la decicion de utilizar herramientas ya disponibles que tuviesen caracteristicas
-similares a las requeridas en donde su modificacion requeriria menos tiempo que el desarrollo completo
-de estas.
+Para implementar la solucion propuesta se necesitó el uso de variadas herramientas.
+En un principio éstas serían desarrolladas específicamente para realizar las
+tareas requeridas pero debido al \red{limitado tiempo disponible}
+se tomo la decicion
+de utilizar herramientas ya disponibles que tuviesen caracteristicas similares a
+las requeridas en donde su modificacion requeriria menos tiempo que el desarrollo
+completo de estas.
+\cmf{Pésimo argumento. No puedes decir que por que tenías poco tiempo no lo hiciste,
+pues quedas como flojo. Creo que deberías decir que luego del estado del arte
+te diste cuenta que muchas funcionalidades que querías implementar ya existían
+en el ambiente y que preferiste utilizarlas por la confianza de tener
+una comunidad de desarrollo detrás más grande, que comenzar las cosas desde cero,
+adicionalmente, puedes decir si modificaste alguna o le hiciste algún cambio
+respecto a código o cosas más chicas, para adaptarlas a tu solución}
 
-Para crear la base del sistema a utilizar se decidio por utilizar uno de los CMS\footnote{"we"} mas 
-famosos, Wordpress. Esta herramienta permite crear una web para manejar contenidos la cual es facil
-de instalar y de administrar. 
+La base del sistema utilizado es Wordpress,
+por ser uno de los CMS\footnote{``we'' \cmf{que es ``we'' ?}} más famosos,
+y ámpliamente utilizado.
+Esta herramienta permite crear una web para manejar contenidos
+de una forma fácil, tanto la instalación como la administración de las
+funcionalidades básicas del sistema.
 
-Wordpress posee una fase de instalacion sencilla debido a que los recursos necesarios son pocos. Se 
-necesita poseer un hosting donde alojar el dominio y ademas una base de datos del tipo relacional, mysql
-o postgres. Una vez inatalado, la administracion total de este es facil de utilizar ya que posee un
-dashboard con todas las opciones necesarias para poder utilizar de forma optima esta herramienta. 
+Wordpress posee una fase de instalación sencilla debido a que los recursos
+necesarios son pocos.
+Se necesita poseer un \emph{hosting} donde alojar el sitio y dominio,
+además de una base de datos relacional, como MySQL o postgres.
+\cmf{Acá deberías argumentar que la mayoría de los servicios de hosting
+permiten, tanto agregar un dominio como crear una base de datos de forma
+fácil, por eso es tan fácil de instalar}
+Una vez instalado, la administracion total del sistema es relativamente simple,
+ya que posee un \emph{dashboard} con todas las opciones necesarias
+tanto para la configuración inicial del sistema, como para la modificación
+de algunas características importantes, desde el contenido, hasta el tema
+y diseño del sitio.
 
-Este CMS, ademas de ser de facil uso, posee la opcion de utilizar plugins para aumentar las capacidades y
-funciones del mismo. La utilizacion de estas modificaciones es fundamental para entregar todas las
-funcionalidades requeridos por la solucion propuesta.
+La características principal de Wordpress, que ha ganado mediante
+la comunidad detrás del proyecto, es la variedad de plugins, que
+tienen tanto un proceso de instalación fácil, como su administración,
+la cual sigue los mismos principios de administración de Wordpress.
+Dichos plugins, son el elemento distintivo de cada CMS
+y en nuestro caso, han sido los actores principales para aplicar
+todos los elementos de {\GAM} en el sistema web.
+
+Los plugins utilizados en nuestro sistema, son los siguientes:
 
 \begin{itemize}
+    \item {\bf Woocommerce:}
+        Es un reconocido módulo que ayuda al usuario a crear una tienda de
+        ventas online de forma rápida y sin costo.
+        Al ser integrado al sistema, lo modifica agregando opciones
+        extra de configuración y administración.
+        El uso de éste plugin genera una restricción en la elección
+        del tema (\emph{frontend})_del sistema, pues deben ser compatible
+        para que exista consistencia en el sitio.
+        Dichos temas existen tanto gratuitos como de pago.
+        El tema escogido se llama \emph{MyStile}, el cual no posee costo.
+        Woocommerce permite administrar de gran forma las caracteristicas del
+        sistema con una colección de plugins que ayudan a aumentar las
+        funcionalidades de este.
+        \cmf{El plugin Woocommerce tiene más plugins? onda Woocommerce-blaBla?
+        o te refieres netamente a funcionalidades?}
 
-\item Woocommerce: Es un reconocido modulo para Wordpress que ayuda al usuario a crear una tienda de ventas 
-online de forma rapida y sin costo. Al ser integrado al sistema este lo modifica para ser facil de configurar
-y administrar. En lo que es frontend, se deben utilizar temas especificamente creados para esta herramienta, y 
-estos se pueden encontrar de forma gratuita o de pago. Para la solucion utilizamos el tema visual gratuito llamado
-\emph{MyStile}. Woocommerce permite administrar de gran forma las caracteristicas del sistema con una coleccion
-de plugins que ayudan a aumentar las funcionalidades de este. 
+    \item {\bf WooCube Pro:}
+        Modulo encargado de los puntos
 
-\item WooCube Pro: Modulo encargado de los puntos
+    \item {\bf WPAchievement:}
+        ...
 
-\item WPAchievement:
-
-\item Refer a Friend:
+    \item {\bf Refer a Friend:}
+        ...
 
 \end{itemize}
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
