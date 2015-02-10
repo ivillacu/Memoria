@@ -63,22 +63,33 @@ de un esquema clave a implementar:
 \begin{itemize}
     \item {\bf Puntuación:}
         Esta herramienta consiste en la entrega de puntos por la realización
-        de tareas definidas o compras en la tienda virtual.
-        \cmf{Cuales son las tareas definidas?}
+        de tareas definidas, como: 
+
+	\begin{itemize}
+	\item Inscribirse:  Esta tarea otorga al usuario 500 puntos.
+	\item Comentarios en productos: Otorga 100 puntos por cada comentario, 
+	con un maximo de 5 comentarios premiables.
+	\item Compras realizadas: Se le premia con un $10\%$ de la compra en
+	puntos.
+	\end{itemize} 
+
         Estos puntos son equivalentes a crédito en la tienda y pueden ser
         utilizados como parte de pago.
         Estos son utilizados para que los clientes vuelvan a comprar a la tienda,
         utilizando créditos generados por él mismo.
-        \cmf{Ya estamos en la sección solución, así que creo que esto debería
-        ser más específico. Cuantos puntos hay por venta, por invitar amigos,
-        no sé, por cualquier mecanismo, y de la misma forma, como estos puntos
-        se traducen a dinero para comprar en el sitio? o cada producto cuesta
-        X pesos, Y puntos}
 
     \item {\bf Achievements (logros):}
         Medallas coleccionables entregadas a los clientes realizando tareas
-        definidas.
-        \cmf{Qué tareas definidas?}
+        definidas, como:
+
+        \begin{itemize}
+        \item Inscribirse.
+	\item Logearse por primera vez.
+        \item Comentar por primera vez.
+        \item Primera orden completada.
+	\item Compra por una suma mayor a $\$15.000$.
+        \end{itemize}
+
         Esta recompensa es utilizada con el fin de entregar la sensación de éxito,
         e importancia en entre otros compradores y asi mantener una motivación
         de seguir comprando y su estado dentro de la comunidad.
@@ -87,56 +98,44 @@ de un esquema clave a implementar:
         Invitaciones de usuarios de la tienda que son entregadas a posibles
         clientes para que estos conozcan y compren en la tienda.
         Esta herramienta entrega un beneficio mutuo tanto al que hizo la invitación
-        como al invitado, una vez que realize una tarea definida.
-        \cmf{Qué tarea definida?}
+        como al invitado. Esta recompensa es un cupon de descuento de 500 puntos.
+	En primer lugar el usuario invita a un cliente no suscrito en la tienda enviando
+	un cupon valido por 500 puntos. Luego, este al comprar con este cupon reenvia, 
+	proceso interno, un cupon de 500 puntos al usuario que lo invito.	
         Esto es utilizado para atraer clientes con gustos similares
         a la tienda, pues el usuario que entregue invitaciones, lo hará a su
         grupo cercano, y así sucesivamente.
 
 \end{itemize}
-\cmf{Por qué usas palabras en inglés si el sitio está en inglés?
-para dar cercanía con los términos de juegos reales? o para hacer el nexo
-con los elementos de {\GAM} ?}
 
 Al unir la tienda virtual con las ideas propuestas dadas por {\GAM} se crea un
-sistema de ventas online capaz de competir con tiendas que poseen más capital
-y experiencia en este ambito.
-\cmf{Realmente se logra? o es el sistema que queda a la misma altura?
-pues las grandes tiendas usan muchos más métodos de atracción de clientes.
-No está mal decir que el sistema queda similar, pero no sé si se pueda
-realizar una competencia directa}
+sistema de ventas online capaz de competir con las caracteristicas similares del 
+comercio electronico de tienda que poseen más capital y experiencia en este ambito, pero
+que estas aun implementan otras herramientas que la ayudan aun mas.
 
 \section{Herramientas}
 
 Para implementar la solucion propuesta se necesitó el uso de variadas herramientas.
 En un principio éstas serían desarrolladas específicamente para realizar las
-tareas requeridas pero debido al \red{limitado tiempo disponible}
-se tomo la decicion
-de utilizar herramientas ya disponibles que tuviesen caracteristicas similares a
-las requeridas en donde su modificacion requeriria menos tiempo que el desarrollo
-completo de estas.
-\cmf{Pésimo argumento. No puedes decir que por que tenías poco tiempo no lo hiciste,
-pues quedas como flojo. Creo que deberías decir que luego del estado del arte
-te diste cuenta que muchas funcionalidades que querías implementar ya existían
-en el ambiente y que preferiste utilizarlas por la confianza de tener
-una comunidad de desarrollo detrás más grande, que comenzar las cosas desde cero,
-adicionalmente, puedes decir si modificaste alguna o le hiciste algún cambio
-respecto a código o cosas más chicas, para adaptarlas a tu solución}
+tareas requeridas pero luego de investigar el estado del arte de estas tecnologias
+se tomo la decicion de utilizar herramientas ya disponibles que tuviesen caracteristicas 
+similares a las requeridas en donde su modificacion requeriria menos tiempo que el desarrollo
+completo de estas. Otra caracteristica que ayudo al cambio de paradigma fue que en todas 
+las herramientas a utilizar existe una comunidad altamente activa que da soporte y que 
+llegaria a ser util al momento de configurar o modificar alguna de estas.
 
 La base del sistema utilizado es Wordpress,
-por ser uno de los CMS\footnote{``we'' \cmf{que es ``we'' ?}} más famosos,
-y ámpliamente utilizado.
+por ser uno de los CMS\footnote{Content management system o Sistema de gestión de contenidos}
+ más famosos, y ámpliamente utilizado.
 Esta herramienta permite crear una web para manejar contenidos
 de una forma fácil, tanto la instalación como la administración de las
 funcionalidades básicas del sistema.
 
 Wordpress posee una fase de instalación sencilla debido a que los recursos
-necesarios son pocos.
-Se necesita poseer un \emph{hosting} donde alojar el sitio y dominio,
-además de una base de datos relacional, como MySQL o postgres.
-\cmf{Acá deberías argumentar que la mayoría de los servicios de hosting
-permiten, tanto agregar un dominio como crear una base de datos de forma
-fácil, por eso es tan fácil de instalar}
+necesarios son pocos. Se necesita poseer un \emph{hosting} donde alojar el sitio y dominio,
+además de una base de datos relacional, como MySQL o postgres. Una gran ventaja de esta
+herramienta es que al necesitar recursos basicos, servidor web y base de datos relacional, 
+puede ser instalado de manera facil en la mayoria de los \emph{hostings} a nivel mundial. 
 Una vez instalado, la administracion total del sistema es relativamente simple,
 ya que posee un \emph{dashboard} con todas las opciones necesarias
 tanto para la configuración inicial del sistema, como para la modificación
@@ -155,23 +154,6 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
 
 \begin{itemize}
 
-\item Woocommerce: Es un reconocido modulo para Wordpress que ayuda al usuario a crear una tienda de ventas 
-online de forma rapida y sin costo. Al ser integrado al sistema este lo modifica para ser facil de configurar
-y administrar. En lo que es frontend, se deben utilizar temas especificamente creados para esta herramienta, y 
-estos se pueden encontrar de forma gratuita o de pago. Para la solucion utilizamos el tema visual gratuito llamado
-\emph{MyStile}. Woocommerce permite administrar de gran forma las caracteristicas del sistema con una coleccion
-de plugins que ayudan a aumentar las funcionalidades de este. 
-
-\item WooCube Pro: Modulo, de pago, encargado de la entrega de puntos a los usuarios luego de la 
-realizacion de las tareas definidas. A su vez, es el encargado de dar equivalencia a los puntos asi como
-dar validez a estos al ser usados como creditos de la tienda en alguna compra. 
-
-\item WPAchievement: Herramienta de pago que entrega los achievements o medallas a los usuarios
-luego de realizada la tarea asociada a alguno de estos.
-
-\item Refer a Friend: Plugin responsable de la administracion de las invitaciones de los clientes a
-potenciales usuarios. A su vez se encarga de entregar los beneficios cuando se realize la tarea
-definida, en el caso de estudio al comprar por primera vez el cliente invitado.
 \item {\bf Woocommerce:}
         Es un reconocido módulo que ayuda al usuario a crear una tienda de
         ventas online de forma rápida y sin costo.
@@ -183,17 +165,20 @@ definida, en el caso de estudio al comprar por primera vez el cliente invitado.
         Dichos temas existen tanto gratuitos como de pago.
         El tema escogido se llama \emph{MyStile}, el cual no posee costo.
         Woocommerce permite administrar de gran forma las caracteristicas del
-        sistema con una colección de plugins que ayudan a aumentar las
-        funcionalidades de este.
-        \cmf{El plugin Woocommerce tiene más plugins? onda Woocommerce-blaBla?
-        o te refieres netamente a funcionalidades?}
+        sistema al cual se le pueden agregar una colección de plugins que ayudan a 
+	aumentar las funcionalidades de este.
 
     \item {\bf WooCube Pro:}
-        Modulo encargado de los puntos
-
+	Modulo, de pago, encargado de la entrega de puntos a los usuarios luego de la
+realizacion de las tareas definidas. A su vez, es el encargado de dar equivalencia a los puntos asi como
+dar validez a estos al ser usados como creditos de la tienda en alguna compra.
     \item {\bf WPAchievement:}
-        ...
+        Herramienta de pago que entrega los achievements o medallas a los usuarios
+luego de realizada la tarea asociada a alguno de estos.
 
     \item {\bf Refer a Friend:}
-        ..
+        Plugin responsable de la administracion de las invitaciones de los clientes a
+potenciales usuarios. A su vez se encarga de entregar los beneficios cuando se realize la tarea
+definida, en el caso de estudio al comprar por primera vez el cliente invitado.
+
 \end{itemize}
