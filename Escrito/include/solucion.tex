@@ -3,6 +3,7 @@ para mejorar la problemática de las pequeñas empresas para competir en lo
 referente a comercio electrónico con sus pares mayores.
 
 \section{Metodología de la solución}
+\label{sec:4.1}
 
 La idea para dar solución a la problemática de las micro empresas,
 que consiste en atraer y retener clientes, para así poder competir
@@ -25,7 +26,7 @@ para un gran despliegue web:
 
     \item {\bf Facilidad de configuración:}
         Existen diversas herramientas que ayudan a un negocio emergente a crear
-        una web, pero pocas estan pensadas para ser configuradas por un usuario
+        una web, pero pocas están pensadas para ser configuradas por un usuario
         sin tantos contenidos tecnológicos.
         Esta característica es vital, pues como ya mencionamos,
         se necesita una personas con los conocimientos necesarios tanto
@@ -34,10 +35,10 @@ para un gran despliegue web:
 
     \item {\bf Facilidad de administración:}
         Característica clave dentro de la solución planteada.
-        El sistema sera administrado, la mayoria del tiempo, por el dueño de la
+        El sistema sera administrado, la mayoría del tiempo, por el dueño de la
         empresa, el cual debe ser capaz de hacer tareas en el sistema
         de manera rápida y frecuentemente, por lo que un grado
-        de complejidad en términos de administración jugarán en contran
+        de complejidad en términos de administración jugarán en contra
         a la hora de poder aprovechar el sistema a disposición.
         Adicionalmente, se necesita un sistema de administración rápido,
         para evitar estar mucho tiempo realizando una tarea simple, que
@@ -63,15 +64,17 @@ de un esquema clave a implementar:
 \begin{itemize}
     \item {\bf Puntuación:}
         Esta herramienta consiste en la entrega de puntos por la realización
-        de tareas definidas, como: 
+        de tareas definidas, como:
 
-	\begin{itemize}
-	\item Inscribirse:  Esta tarea otorga al usuario 500 puntos.
-	\item Comentarios en productos: Otorga 100 puntos por cada comentario, 
-	con un maximo de 5 comentarios premiables.
-	\item Compras realizadas: Se le premia con un $10\%$ de la compra en
-	puntos.
-	\end{itemize} 
+    \begin{itemize}
+        \item Inscripción:
+            Esta tarea otorga al usuario 500 puntos.
+        \item Comentarios en productos:
+            Otorga 100 puntos por cada comentario, con un máximo de 5 comentarios
+            con premio.
+        \item Compras realizadas:
+            Se le premia con un 10\% de la compra en puntos.
+    \end{itemize}
 
         Estos puntos son equivalentes a crédito en la tienda y pueden ser
         utilizados como parte de pago.
@@ -83,25 +86,26 @@ de un esquema clave a implementar:
         definidas, como:
 
         \begin{itemize}
-        \item Inscribirse.
-	\item Logearse por primera vez.
-        \item Comentar por primera vez.
-        \item Primera orden completada.
-	\item Compra por una suma mayor a $\$15.000$.
+            \item Inscribirse.
+            \item Primer inicio de sesión.
+            \item Primer comentario/reseña.
+            \item Primera orden completada.
+            \item Compra por una suma mayor a \$15,000 CLP.
         \end{itemize}
 
         Esta recompensa es utilizada con el fin de entregar la sensación de éxito,
-        e importancia en entre otros compradores y asi mantener una motivación
+        e importancia en entre otros compradores y así mantener una motivación
         de seguir comprando y su estado dentro de la comunidad.
 
     \item {\bf Referals (Referencias):}
         Invitaciones de usuarios de la tienda que son entregadas a posibles
         clientes para que estos conozcan y compren en la tienda.
         Esta herramienta entrega un beneficio mutuo tanto al que hizo la invitación
-        como al invitado. Esta recompensa es un cupon de descuento de 500 puntos.
-	En primer lugar el usuario invita a un cliente no suscrito en la tienda enviando
-	un cupon valido por 500 puntos. Luego, este al comprar con este cupon reenvia, 
-	proceso interno, un cupon de 500 puntos al usuario que lo invito.	
+        como al invitado. Esta recompensa es un cupón de descuento de 500 puntos.
+        En primer lugar el usuario invita a un cliente no suscrito en la tienda
+        enviando un cupón valido por 500 puntos.
+        Luego, este al comprar con este cupón reenvía,
+        proceso interno, un cupón de 500 puntos al usuario que lo invito.
         Esto es utilizado para atraer clientes con gustos similares
         a la tienda, pues el usuario que entregue invitaciones, lo hará a su
         grupo cercano, y así sucesivamente.
@@ -109,77 +113,98 @@ de un esquema clave a implementar:
 \end{itemize}
 
 Al unir la tienda virtual con las ideas propuestas dadas por {\GAM} se crea un
-sistema de ventas online capaz de competir con las caracteristicas similares del 
-comercio electronico de tienda que poseen más capital y experiencia en este ambito, pero
-que estas aun implementan otras herramientas que la ayudan aun mas.
+sistema de ventas online capaz de competir con las características similares del
+comercio electrónico de tienda que poseen más capital y experiencia en este ámbito,
+pero que estas aun implementan otras herramientas que la ayudan aun mas.
 
-\section{Seleccion de sistema}
+\section{Selección de sistema}
 
-Una parte de esta investigacion es la seleccion del sistema web a utilizar como base para
-implementar la solucion propuesta. Luego de investigar, se llego a los tres mas usados
-para crear una tienda virtual.
+Una parte de esta investigación es la selección del sistema web a utilizar como
+base para implementar la solución propuesta. Luego de investigar, se llego a los
+tres mas usados para crear una tienda virtual.
 
-Para poder elegir entre estos sistemas, se proponen las siguientes metricas para la seleccion:
-
+Para poder elegir entre estos sistemas, se proponen las siguientes métricas para
+la selección:
 
 \begin{itemize}
 
-\item Facilidad de instalacion: Esta metrica muestra el nivel de conocimientos que se debe
-tener para poder realizar una instalacion completa y exitosa del sistema. Tambien demuestra
-que tanta ayuda existe durante la misma(comentarios, ejemplos, etc). Esta se medira con una escala
-de 1 a 10. Esta escala mide desde lo mas facil(1) a lo mas dificil(10).
-\item Facilidad de administracion: Escala que mide el nivel de conocimientos para poder
-utilizar el \emph{dashboard} de administracion de cada sistema. Tambien se toma en cuenta
-la ayuda y ejemplos que da el sistema al usuario. Esta medida en una escala de 1 a 10, siendo 1 el
-mas facil y 10 el mas dificil.
-\item Actualizaciones y comunidad activa: Metrica que demuestra que tan periodicamente
-se realizan actualizaciones al sistema. Tambien mide la camunidad que existe tras cada proyecto
-tanto en tamaño como en actividad. Esta escala tambien se mide entre 1 y 10, siendo 1 una periodicidad
-baja de actualizaciones y falta de comunidad y 10 actualizaciones diarias y una comunadad altamente 
-activa y colaboradora.
-\item Caracteristicas utlizables: Mide la existencia de plugins que implementen herramientas
- de gamification y si estas son gratuitas o de pago. Si son de estas ultimas si son de bajo 
-costo o alto costo.
-\item Traducciones: Muestra si existe una traduccion del sistema a otros idiomas, en especial al 
-español. 
+    \item Facilidad de instalación:
+        Esta métrica muestra el nivel de conocimientos que se debe
+        tener para poder realizar una instalación completa y exitosa del sistema.
+        También demuestra que tanta ayuda existe durante la misma (comentarios,
+        ejemplos, etc).
+        Ésta se medirá con una escala de 1 (lo más fácil) a 10 (lo más difícil).
+
+    \item Facilidad de administración:
+        Escala que mide el nivel de conocimientos para poder utilizar el
+        \emph{dashboard} de administración de cada sistema.
+        También se toma en cuenta la ayuda y ejemplos que da el sistema al usuario.
+        Esta medida en una escala de 1 a 10, siendo 1 el mas fácil y 10 el mas
+        difícil.
+
+    \item Actualizaciones y comunidad activa:
+        Métrica que demuestra que tan periódicamente se realizan actualizaciones
+        al sistema.
+        También mide la comunidad que existe tras cada proyecto tanto en tamaño
+        como en actividad.
+        Esta escala también se mide entre 1 y 10, siendo 1 una periodicidad baja
+        de actualizaciones y falta de comunidad y 10 actualizaciones diarias y
+        una comunidad altamente activa y colaboradora.
+
+    \item Características utilizables:
+        Mide la existencia de plugins que implementen herramientas de {\GAM}
+        y si estas son gratuitas o de pago.
+        Si son de estas últimas si son de bajo o alto costo.
+
+    \item Traducciones:
+        Muestra si existe una traducción del sistema a otros idiomas, en especial
+        al español.
 
 \end{itemize}
 
-En el siguiente cuadro se hace la comparacion de los tres sistemas preseleccionados para implementar
-la solucion propuesta.
+En el siguiente cuadro se hace la comparación de los tres sistemas preseleccionados
+para implementar la solución propuesta.
 
 \begin{table}[h]
-\begin{tabular}{lccccc}
-                        & \begin{tabular}[c]{@{}c@{}}Dificultad\\ Instalacion\end{tabular} & \begin{tabular}[c]{@{}c@{}}Dificultad\\ Administracion\end{tabular} & \begin{tabular}[c]{@{}c@{}}Actualizaciones y\\ Comunidad\end{tabular} & \begin{tabular}[c]{@{}c@{}}Caracteristicas\\ Utilizables\end{tabular}             & Traduccion \\
-Magento                 & 7                                                                & 8                                                                   & 3                                                                     & \begin{tabular}[c]{@{}c@{}}Si, \\ Alto costo\end{tabular}                         & Casi       \\
-Prestashop              & 6                                                                & 7                                                                   & 4                                                                     & No                                                                                & Si         \\
-Wordpress + Woocommerce & 4                                                                & 5                                                                   & 7                                                                     & \begin{tabular}[c]{@{}c@{}}Si,\\ Gratuitas\\ Bajo costo\\ Alto Costo\end{tabular} & Si        
+\footnotesize
+\setlength\extrarowheight{5pt}
+\begin{tabular}{p{2.5cm}|p{1.8cm}|p{2.5cm}|p{2.8cm}|p{2.5cm}|p{2cm}|}
+                        & Dificultad\newline Instalación
+                        & Dificultad\newline Administración
+                        & Actualizaciones y\newline Comunidad
+                        & Características\newline Utilizables
+                        & Traducción \\ \hline
+
+Magento                 & 7 & 8 & 3 & Si,\newline Alto costo & Parcialmente  \\ \hline
+Prestashop              & 6 & 7 & 4 & No                     & Si    \\ \hline
+Wordpress +\newline Woocommerce & 4 & 5 & 7 & Si,\newline Gratuitas\newline Bajo costo\newline Alto Costo & Si \\\hline
 \end{tabular}
 \end{table}
 \section{Herramientas}
 
-Para implementar la solucion propuesta se necesitó el uso de variadas herramientas.
+Para implementar la solución propuesta se necesitó el uso de variadas herramientas.
 En un principio éstas serían desarrolladas específicamente para realizar las
-tareas requeridas pero luego de investigar el estado del arte de estas tecnologias
-se tomo la decicion de utilizar herramientas ya disponibles que tuviesen caracteristicas 
-similares a las requeridas en donde su modificacion requeriria menos tiempo que el desarrollo
-completo de estas. Otra caracteristica que ayudo al cambio de paradigma fue que en todas 
-las herramientas a utilizar existe una comunidad altamente activa que da soporte y que 
-llegaria a ser util al momento de configurar o modificar alguna de estas.
+tareas requeridas pero luego de investigar el estado del arte de estas tecnologías
+se tomo la decisión de utilizar herramientas ya disponibles que tuviesen
+características similares a las requeridas en donde su modificación requeriría
+menos tiempo que el desarrollo completo de estas.
+Otra característica que ayudo al cambio de paradigma fue que en todas las
+herramientas a utilizar existe una comunidad altamente activa que da soporte y que
+llegaría a ser útil al momento de configurar o modificar alguna de estas.
 
-La base del sistema utilizado es Wordpress,
-por ser uno de los CMS\footnote{Content management system o Sistema de gestión de contenidos}
- más famosos, y ámpliamente utilizado.
-Esta herramienta permite crear una web para manejar contenidos
-de una forma fácil, tanto la instalación como la administración de las
-funcionalidades básicas del sistema.
+La base del sistema utilizado es Wordpress, por ser uno de los
+CMS~\footnote{Content management system o Sistema de gestión de contenidos}
+más famosos, y ampliamente utilizado.
+Esta herramienta permite crear una web para manejar contenidos de una forma fácil,
+tanto la instalación como la administración de las funcionalidades básicas del sistema.
 
 Wordpress posee una fase de instalación sencilla debido a que los recursos
-necesarios son pocos. Se necesita poseer un \emph{hosting} donde alojar el sitio y dominio,
-además de una base de datos relacional, como MySQL o postgres. Una gran ventaja de esta
-herramienta es que al necesitar recursos basicos, servidor web y base de datos relacional, 
-puede ser instalado de manera facil en la mayoria de los \emph{hostings} a nivel mundial. 
-Una vez instalado, la administracion total del sistema es relativamente simple,
+necesarios son pocos. Se necesita poseer un \emph{hosting} donde alojar el sitio y
+dominio, además de una base de datos relacional, como MySQL o postgres.
+Una gran ventaja de esta herramienta es que al necesitar recursos básicos,
+servidor web y base de datos relacional, puede ser instalado de manera fácil en la
+mayoría de los \emph{hostings} a nivel mundial.
+Una vez instalado, la administración total del sistema es relativamente simple,
 ya que posee un \emph{dashboard} con todas las opciones necesarias
 tanto para la configuración inicial del sistema, como para la modificación
 de algunas características importantes, desde el contenido, hasta el tema
@@ -207,28 +232,32 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
         para que exista consistencia en el sitio.
         Dichos temas existen tanto gratuitos como de pago.
         El tema escogido se llama \emph{MyStile}, el cual no posee costo.
-        Woocommerce permite administrar de gran forma las caracteristicas del
-        sistema al cual se le pueden agregar una colección de plugins que ayudan a 
-	aumentar las funcionalidades de este.
+        Woocommerce permite administrar de gran forma las características del
+        sistema al cual se le pueden agregar una colección de plugins que ayudan a
+        aumentar las funcionalidades de este.
 
     \item {\bf WooCube Pro:}
-	Modulo, de pago, encargado de la entrega de puntos a los usuarios luego de la
-	realizacion de las tareas definidas. A su vez, es el encargado de dar equivalencia
-	a los puntos asi como dar validez a estos al ser utilizados como creditos 
-	en compras realizadas. Este plugin utiliza de base un modulo gratuito, ``Cube points'',
-	el cual es la base del diseño de puntaje. Tambien incorpora una herramientas
-	para realizar y desplegar una tabla de posciciones con los usuarios que han
-	obtenido mayor cantidad de puntaje. 
+        Modulo, de pago, encargado de la entrega de puntos a los usuarios luego de
+        la realización de las tareas definidas.
+        A su vez, es el encargado de dar equivalencia a los puntos así como dar
+        validez a estos al ser utilizados como créditos en compras realizadas.
+        Este plugin utiliza de base un modulo gratuito, ``Cube points'',
+        el cual es la base del diseño de puntaje.
+        También incorpora una herramientas para realizar y desplegar una tabla
+        de posiciones con los usuarios que han obtenido mayor cantidad de puntaje.
 
     \item {\bf WPAchievement:}
-	Herramienta de pago que entrega la funcionalidad de otorgar achievements, logros o medallas
-	a los usuarios luego de realizada alguna de las tareas definidas, vease \red{Link Cap 4.1}.
-	Este modulo es el encargado de la entrega de los logros y tambien del guardado de estos 
-	para un futuro despliegue de estos.
+        Herramienta de pago que entrega la funcionalidad de otorgar achievements,
+        logros o medallas a los usuarios luego de realizada alguna de las tareas
+        definidas (véase \ref{sec:4.1}).
+        Este modulo es el encargado de la entrega de los logros y también del
+        guardado de estos para un futuro despliegue de estos.
 
     \item {\bf Refer a Friend:}
-        Plugin responsable de la administracion de las invitaciones de los clientes a
-	potenciales usuarios. A su vez se encarga de entregar los beneficios cuando se 
-	realize la tarea definida, en el caso de estudio al comprar por primera vez el cliente invitado.
+        Plugin responsable de la administración de las invitaciones de los
+        clientes a potenciales usuarios.
+        A su vez se encarga de entregar los beneficios cuando se realiza la tarea
+        definida, en el caso de estudio al comprar por primera vez el cliente
+        invitado.
 
 \end{itemize}
