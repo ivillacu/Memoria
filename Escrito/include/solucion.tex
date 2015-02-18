@@ -198,6 +198,8 @@ más famosos, y ampliamente utilizado.
 Esta herramienta permite crear una web para manejar contenidos de una forma fácil,
 tanto la instalación como la administración de las funcionalidades básicas del sistema.
 
+
+
 Wordpress posee una fase de instalación sencilla debido a que los recursos
 necesarios son pocos. Se necesita poseer un \emph{hosting} donde alojar el sitio y
 dominio, además de una base de datos relacional, como MySQL o postgres.
@@ -218,6 +220,15 @@ Dichos plugins, son el elemento distintivo de cada CMS
 y en nuestro caso, han sido los actores principales para aplicar
 todos los elementos de {\GAM} en el sistema web.
 
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/SitioBase.png}
+  \caption[TemaVisual]{Tema visual utilizado, vista de la tienda.}
+  \label{fig:Players}
+\end{figure}
+
+
+
 Los plugins utilizados en nuestro sistema, son los siguientes:
 
 \begin{itemize}
@@ -236,6 +247,14 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
         sistema al cual se le pueden agregar una colección de plugins que ayudan a
         aumentar las funcionalidades de este.
 
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/pedidos.png}
+  \caption[administracion]{Administracion de pedidos}
+  \label{fig:Players}
+\end{figure}
+
+
     \item {\bf WooCube Pro:}
         Modulo, de pago, encargado de la entrega de puntos a los usuarios luego de
         la realización de las tareas definidas.
@@ -246,12 +265,22 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
         También incorpora una herramientas para realizar y desplegar una tabla
         de posiciones con los usuarios que han obtenido mayor cantidad de puntaje.
 
+\red{Foto rara de sacar}
+
+
     \item {\bf WPAchievement:}
         Herramienta de pago que entrega la funcionalidad de otorgar achievements,
         logros o medallas a los usuarios luego de realizada alguna de las tareas
         definidas (véase \ref{sec:4.1}).
         Este modulo es el encargado de la entrega de los logros y también del
         guardado de estos para un futuro despliegue de estos.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/Nuevamedalla.png}
+  \caption[achievement]{Entrega de un achievement}
+  \label{fig:Players}
+\end{figure}
 
     \item {\bf Refer a Friend:}
         Plugin responsable de la administración de las invitaciones de los
@@ -260,4 +289,39 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
         definida, en el caso de estudio al comprar por primera vez el cliente
         invitado.
 
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/invitaunamigo.png}
+  \caption[invitar]{Vista de invitar un amigo}
+  \label{fig:Players}
+\end{figure}
+
 \end{itemize}
+
+\section{Encuesta evualativa}
+
+Para apoyar el estudio empirico realizado, se creo una encuesta que cuenta con $(x)$ preguntas, con el
+objetivo de obtener información mas acabada sobre los gustos de las personas y en especial 
+si les interesa la idea de utilizar gamification en ventas online. Esta informacion
+tambien se puede utilizar para extrapolar ideas sobre la utilizacion de gamification en
+ventas prescensiales.
+
+La encuesta tiene como objetivo principal el saber si a la gente, en primer lugar, tiene conocimiento
+de que ya han utilizado, de algun modo, gamification ya sea en el supermercado, tiendas de retail, 
+farmacas, etc. Luego se pregunta si han obtenido o tienen informacion de como obtener alguno 
+de los beneficios dados en estas tiendas y tambien se les presenta una escala para poder medir 
+el nivel de aceptacion de beneficios entregados a travez de gamificacion.
+
+A continuacion se explicaran las preguntas con mas sigificado realizadas en la encuesta:
+\begin{itemize}
+\item Sexo, rango de edad y ocupación: Estos son los datos que nos ayudaran en segmentar
+la informacion para ver en que formas se pueden enfocar las herramientas.
+\item ¿Esta al tanto de lo que es Gamification?: Pregunta exclusiva para obtener la cantidad de
+personas que tienen conocimiento del concepto.
+\item ¿Qué beneficios prefiere o preferiría obtener?: Busca encontrar los beneficios que son
+ mas interesantes para las personas. Esto ayudara a priorizar beneficios.
+\item ¿Cree usted que el uso de Gamificacion lo motiva para volver a comprar en la tienda?: La 
+base del concepto es que el cliente sea atraido y que vuelva a comprar en la tienda. Esta pregunta
+tiene como objetivo encontrar si se crea en las personas la motivación para volver.
+\end{itemize}
+
