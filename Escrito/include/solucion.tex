@@ -59,12 +59,17 @@ de gran tamaño utilizaremos el concepto de {\GAM}.
 Esta idea ayudará a la tienda a atraer y retener clientes con la utilización
 de conceptos del desarrollo de juegos, que ya se han mencionado en éste documento,
 de los cuales se han seleccionado los siguientes elementos, como parte
-de un esquema clave a implementar:
+de un esquema clave a implementar. Estos ya han sido utilizados y probados en diversos
+sistemas como herramientas para motivar al usuario\cite{SocialMotivation}
 
 \begin{itemize}
     \item {\bf Puntuación:}
-        Esta herramienta consiste en la entrega de puntos por la realización
-        de tareas definidas, como:
+	Este estilo de recompensa es uno de los primeros creados como parte de
+	implementar gamification. Es una de las formas mas sencillas de empezar
+ 	a utilizar gamification\cite{OnlineComp} y de la cual se pueden basar otros tipos de recompensas.
+	
+        En el contexto de nuestra solución, esta herramienta consiste en la entrega de 
+	puntos por la realización de tareas definidas, como:
 
     \begin{itemize}
         \item Inscripción:
@@ -80,10 +85,16 @@ de un esquema clave a implementar:
         utilizados como parte de pago.
         Estos son utilizados para que los clientes vuelvan a comprar a la tienda,
         utilizando créditos generados por él mismo.
+	
 
     \item {\bf Achievements (logros):}
-        Medallas coleccionables entregadas a los clientes realizando tareas
-        definidas, como:
+	
+	Esta forma de motivación, a travez de la entrega de medallas o \emph{achievements}
+	ha empezado a ser utilizada para manejar el comportamiento de los 
+	usuarios dentro de la web\cite{BehaviorBadges}.
+	
+        Dentro de la solución se implementara la entrega de medallas (\emph{achievements})
+	coleccionables entregados a los clientes por cumplir con tareas definidas, como:
 
         \begin{itemize}
             \item Inscribirse.
@@ -95,7 +106,7 @@ de un esquema clave a implementar:
 
         Esta recompensa es utilizada con el fin de entregar la sensación de éxito,
         e importancia en entre otros compradores y así mantener una motivación
-        de seguir comprando y su estado dentro de la comunidad.
+        de seguir comprando y su estado dentro de la comunidad. 
 
     \item {\bf Referals (Referencias):}
         Invitaciones de usuarios de la tienda que son entregadas a posibles
@@ -119,9 +130,9 @@ pero que estas aun implementan otras herramientas que la ayudan aun mas.
 
 \section{Selección de sistema}
 
-Una parte de esta investigación es la selección del sistema web a utilizar como
-base para implementar la solución propuesta. Luego de investigar, se llego a los
-tres mas usados para crear una tienda virtual.
+Como parte de la investigacón, se tubierón que seleccionar distintos sistemas web para
+crear una tienda electronica, estos son \emph{Magento}, \emph{Prestashop}, \emph{Wordpress
+$+$ Woocommerce}.
 
 Para poder elegir entre estos sistemas, se proponen las siguientes métricas para
 la selección:
@@ -194,11 +205,10 @@ llegaría a ser útil al momento de configurar o modificar alguna de estas.
 
 La base del sistema utilizado es Wordpress, por ser uno de los
 CMS~\footnote{Content management system o Sistema de gestión de contenidos}
-más famosos, y ampliamente utilizado.
+más famosos, y ampliamente utilizado\cite{CmsPerformance}.
+
 Esta herramienta permite crear una web para manejar contenidos de una forma fácil,
 tanto la instalación como la administración de las funcionalidades básicas del sistema.
-
-
 
 Wordpress posee una fase de instalación sencilla debido a que los recursos
 necesarios son pocos. Se necesita poseer un \emph{hosting} donde alojar el sitio y
