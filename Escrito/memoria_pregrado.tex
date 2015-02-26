@@ -14,6 +14,7 @@
 \usepackage{color}
 \usepackage{xcolor}
 \usepackage{enumerate}
+\usepackage{enumitem}
 \usepackage{newlfont}
 \usepackage{psfrag}
 \usepackage{charter}
@@ -36,6 +37,8 @@
 \usepackage[unicode]{hyperref}
 
 \hfuzz2pt
+%\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[itemize]{itemsep=1pt, topsep=0pt}
 
 \hypersetup{%
 pdftitle={Memoria ivillacu},
@@ -55,8 +58,8 @@ urlcolor=cyan,
 \topmargin       -1.5cm
 %\voffset        2cm  % Margen superior
 \textheight     22cm
-%  \parindent      4cm
-%\parskip        2ex
+%\parindent      1cm
+\parskip        2ex
 
 \newlength{\defbaselineskip}
 \setlength{\defbaselineskip}{\baselineskip}
@@ -136,6 +139,9 @@ urlcolor=cyan,
 % Comentarios
 \newcommand{\cmf}{\textcolor{red}{CMF:}\textcolor{blue}}
 \newcommand{\GAM}{\emph{Gamification}}
+
+% Cambiar "Bibliography" a "Bibliografía"
+\renewcommand{\bibname}{Bibliografía}
 
 \begin{document}
 

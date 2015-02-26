@@ -589,7 +589,8 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \let\@ldthebibliography\thebibliography
 \renewcommand{\thebibliography}[1]{%
     \newpage
-    \addcontentsline{toc}{chapter}{Bibliography}
+    %\addcontentsline{toc}{chapter}{Bibliography}
+    \addcontentsline{toc}{chapter}{Bibliografía}
     \@ldthebibliography{#1}
 }
 
