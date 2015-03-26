@@ -1,18 +1,24 @@
-\section{Descripción del problema}
+\section{Contexto}
 
 Desde el nacimiento del comercio electrónico ha existido una gran diferencia
 entre las micro y pequeñas empresas con aquellas empresas con mayores recursos,
 véase la figura \ref{tab:tam_empresa} que muestra las diferentes clasificaciones
-de empresas existentes en chile.
+de empresas existentes en Chile.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{lrrr}
+\begin{tabular}{|l|r|r|r|}
+\hline
 {\bf Empresa}  & {\bf Número de Trabajadores} & {\bf Porcentaje de ocupación} & {\bf Ventas anuales}\\
+\hline
 Micro    & 1 a 4                & 44.4\%  & menos de 2400 UF\\
+\hline
 Pequeña  & 5 a 49               & 37\%  & 2401 a 25000 UF\\
+\hline
 Mediana  & 50 a 199             & 13\%  & 25001 a 100000 UF\\
+\hline
 Grande   & más de 199           & 10\%  & más de 100000 UF\\
+\hline
 \end{tabular}
 \caption[TamañoEmpresa]{Tamaño de empresa según cantidad de empleados y
 la cantidad de estas en el mercado (SOFOFA Chile - \url{http://www.sofofa.cl/}).}
@@ -20,28 +26,28 @@ la cantidad de estas en el mercado (SOFOFA Chile - \url{http://www.sofofa.cl/}).
 \end{table}
 
 
-La problemática nace cuando la pequeña empresa desea desea utilizar el comercio
+La problemática nace cuando la pequeña empresa desea utilizar el comercio
 electrónico y no cuenta con los recursos necesarios, monetarios y humanos,
 para lograr utilizar esta herramienta con éxito.
 
 Esta situación es aprovechada por las grandes empresas para atraer y retener a los
 clientes con un mayor marketing de productos disminuyendo las ventas de las
-empresas pequeñas en donde muchas de estas terminan cerrando después de un cierto
+empresas pequeñas en donde muchas de éstas terminan cerrando después de un cierto
 tiempo.
 
 Hoy en día las micro y pequeñas empresas tienen acceso a un sin número de
 tecnologías que ayudan a la creación y administración de una tienda virtual.
-Estas herramientas son cada vez mas fáciles de administrar por una persona
-con conocimientos básicos debido principalmente a que sus curvas de aprendizaje
+Estas herramientas son cada vez más fáciles de administrar por una persona
+con conocimientos básicos, debido principalmente a que sus curvas de aprendizaje
 son menores que en años anteriores.
 
-La problemática mayor es como incrementar la base de clientes de forma estable
+La problemática mayor es cómo incrementar la base de clientes de forma estable
 para evitar fluctuaciones en la ventas y así poder tener una estabilidad económica.
 Esta es la base del problema que se quiere resolver debido a que los negocios
 pequeños tienen una falta de marketing \emph{on-line} y no tienen exposición al público
 objetivo.
 
-La falta de exposición complica a que éstos negocios puedan atraer nuevos clientes
+La falta de exposición complica a que estos negocios puedan atraer nuevos clientes
 para poder aumentar las ventas.
 Luego, si se logra entregar buen marketing a la micro o pequeña empresa y su
 exposición en el mercado objetivo aumenta, existe otra arista de este problema
@@ -50,7 +56,7 @@ de ventas, asegurando la permanencia en el tiempo.
 
 La solución a este problema es de una alta complejidad, ya que se debe enfocar en
 los clientes.
-Estos son diferentes tipos de personas y por lo tanto la diversidad de gustos es
+Estos son diferentes tipos de personas, y por lo tanto, la diversidad de gustos es
 alta.
 
 Si bien la dificultad de atraer a esta cantidad de distintos tipos de personas
@@ -60,17 +66,17 @@ de clientes, complacer gustos por separado.
 atraen varios tipos de clientes.
 
 Para dar solución a esta problemática, se utilizarán aplicaciones gratuitas y de
-bajo costo monetario. La base del sistema, wordpress, el plugin de comercio
-electrónico, woocommerce, y el tema visual, mystile, son gratuitos y OpenSource.
-Los demás plugins, herramientas de {\GAM}, son de pago pero de bajo costo.
+bajo costo monetario. La base del sistema, Wordpress, el plugin de comercio
+electrónico, Woocommerce, y el tema visual, Mystile, son gratuitos y OpenSource.
+Los demás plugins, herramientas de {\gam}, son de pago pero de bajo costo.
 
 La solución contiene una tienda virtual fácil de configurar y administrar,
 además de incluir los plugins necesarios para la utilización de los principios
-de {\GAM} en la tienda.
+de {\gam} en la tienda.
 
 Además de entregar la aplicación, se investigará y realizará un estudio preliminar
-para ver el desempeño de {\GAM} en tiendas \emph{on-line} de micro o pequeñas empresas.
-Con dicho estudio se podrá determinar si la utilización de ésta idea en ventas
+para ver el desempeño de {\gam} en tiendas \emph{on-line} de micro o pequeñas empresas.
+Con dicho estudio se podrá determinar si la utilización de esta idea en ventas
 electrónicas es exitosa, adecuándose en cierto negocio,
 y así entregar la información necesaria para que la estrategia sea implementada
 en otros negocios.
@@ -78,41 +84,41 @@ en otros negocios.
 \section{Tienda asociada}
 
 Para obtener datos sobre esta problemática y poder realizar la implementación de una
-solución se pidió el apoyo a una pyme del sector de ventas de videojuegos en la región,
+solución se pidió el apoyo a una PyME del sector de ventas de videojuegos en la región,
 llamada ``Kurgan''. Ubicada en avenida Valparaíso 595 Local 9, Viña del Mar, existe desde
 el año 2010 en dicha ciudad y se especializa en la venta de consolas, accesorios y videojuegos.
 También se dedica a la venta de juegos de mesa y figuras coleccionables, pero en menor medida.
 
 Esta tienda contaba con la problemática al tener que competir con empresas de mayor 
 tamaño de la región y del país. Estas empresas cuentan con todas las herramientas
-necesarias para la venta de sus productos online y es aquí donde se utilizara 
+necesarias para la venta de sus productos online y es aquí donde se utilizará 
 el sistema creado para ayudar a competir con ellas. 
 
 \section{Antecedentes del problema}
 
-Desde los inicios del internet las empresas han tenido las ganas de utilizar
+Desde los inicios de Internet las empresas han tenido la motivación de utilizar
 esta herramienta para poder incrementar el universo de clientes y también sus
 ventas.
-Un ejemplo de esto es que en el año 1984 la empresa CompuServe creo y lanzó
+Un ejemplo de esto es que en el año 1984, la empresa CompuServe creó y lanzó
 ``Electronic Mall'', el primer servicio de comercio electrónico~\cite{Def:1}.
-Años mas tarde, en 1992, con la llegada del primer navegador web, la empresa
-\emph{Book Stacks Unlimited} crea un sitio de venta de libros con la opción de
+Años más tarde, en 1992, con la llegada del primer navegador web, la empresa
+\emph{Book Stacks Unlimited}, crea un sitio de venta de libros con la opción de
 pagar mediante tarjeta de crédito.
 
-Actualmente, con la irrupción del internet, el universo de clientes al que se
+Actualmente, con la irrupción de Internet, el universo de clientes al que se
 puede llegar es a escala mundial.
 Empresas grandes, con un gran capital humano y económico, utilizan estas
-herramientas para aumentar aún mas el marketing de productos y además poseen los
+herramientas para aumentar aún más el marketing de productos y además poseen los
 recursos para contratar empresas especialistas en este ámbito.
 Para empresas con un capital menor, micro y pequeña empresa, es de mayor
-dificultad contar con estas herramientas debido a que la utilización de estas
+dificultad contar con estas herramientas debido a que la utilización de 
 tecnologías debe ser aplicado por personas con conocimiento debido a la dificultad
 de configuración y mantención.
 
 Esta diferencia debe ser combatida debido a que una gran parte de los empleos
 son entregados por micro y pequeñas empresa, un ejemplo es Chile donde cerca del
-70\% de los empleos son entregados por estas empresas, y si estas son destruidas
-por las grandes empresas causara que aumente el desempleo y esto puede traer una
+70\% de los empleos son entregados por estas empresas, y si éstas son destruidas
+por las grandes compañias causará que aumente el desempleo y esto puede traer una
 debacle en la economía al haber menos producción en la zona afectada por este
 problema.
 
