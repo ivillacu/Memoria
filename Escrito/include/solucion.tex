@@ -313,6 +313,49 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
 
 \end{itemize}
 
+\section{Seguridad}
+
+La seguridad es utilizada a lo largo del sistema para evitar robo de información o 
+fraude por personas externas. 
+
+En el sistema propuesto se utilizo la seguridad por defecto que trae incoporada
+el sistema base, \emph{Wordpress}, ademas de utilizar \emph{Secure Socket Layer}, SSL, para el
+ intercambio de información encriptada. Las caracteristicas de seguridad son:
+
+\begin{itemize}
+
+\item {\bf \emph{Password} encriptada:} Esta es guardada de forma encriptada en la base de datos y solo es 
+	posible verificar el ingreso correcto de esta mediante la compracion del hash.
+\item {\bf Generación automatica de \emph{password}:} Al registrarse un nuevo usuario en el sistema, este 
+	envia una \emph{password} autogenerada con el fin de asegurar la existencia del usuario.
+\item {\bf Persmisos de los archivos en el servidor:} Es utilizado con el objetivo de que solo el creador
+	de los archivos pueda modificarlos. Tambien se desactiva la posibilidad de poder modificarlos
+	mediante el \emph{browser} de Internet.
+\item {\bf Utilización de SSL:} Se utiliza para poder establecer una conexión segura entre el servidor web
+	y el \emph{browser} de Internet. Mediante esto se asegura el ocultamiento de información
+	importante, como \emph{password}, tarjetas de credito, etc. 
+\end{itemize}  
+
+Todas formas  de seguridad descritas son basicas para una tienda que utilzara esta solución. Existen 
+otras formas de seguridad que pueden ser añadidas para aumentar el nivel de seguridad del sistema:
+
+\begin{itemize}
+
+\item {\bf Restricción de privilegios en base de datos:} Remover los privilegios \emph{Drop}, 
+\emph{Alter} y \emph{Revoke} de los usuarios de la base de datos y solo dejarlos en el usuario
+unico de administración.
+
+\item {\bf Seguridad en el directorio \emph{wp-admin}:} Utilizado como una barrera extra de seguridad,
+por el lado de servidor, para la administración del sistema. Para realizar esto se puede utilizar 
+\emph{BasicAuth} pero al utilizar este tipo de seguridad algunas de las funcionalidades de la 
+administración dejen de funcionar, como puede ser el \emph{AJAX Handler}.
+
+\end{itemize}
+
+Toda la seguridad descrita previamente ayuda a cuidar la información importante que maneja el sistema 
+tanto al iniciar sesion en la tienda como al intercambiar datos confidenciales con los diferentes 
+metodos de pago que pusiese tener la tienda.
+
 \section{Encuesta evaluativa}
 
 Para apoyar el estudio empírico realizado, se creó una encuesta que cuenta con $12$ preguntas, con el
