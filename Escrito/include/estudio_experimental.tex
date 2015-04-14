@@ -1,4 +1,5 @@
 \section{Sistema Web}
+\label{cap_estudio}
 
 El sitio web en el cual se implementó la solución presentada fue creado para la micro empresa de
 ventas de vídeo juegos en el capítulo \ref{ch:desc}.
@@ -19,7 +20,7 @@ La equivalencia entre puntos y dinero es de $1-1$, quiere decir que $1$ punto es
 $1$ peso. También existía una restricción a la hora de utilizar los puntos como descuentos, ésta 
 era que no se podían utilizar para disminuir más de un 7\%.
 
-La investigación e implementación tuvo 2 etapas. La primera de reconocimiento y obtención de datos
+La investigación e implementación tuvo dos etapas. La primera de reconocimiento y obtención de datos
  sin la implementación de la solución para crear un línea base del comportamiento de las visitas 
 y ventas por este medio.
 
@@ -87,7 +88,7 @@ usuarios registrados y ventas se refiere.
 En la primera como en la segunda etapa, no hubo usuarios registrados y tampoco
 una transacción, venta, realizada.
 
-Luego de obtener los datos durante 2 meses se pudo inferir que la utilización
+Luego de obtener los datos durante dos meses se pudo inferir que la utilización
 de {\gam}, no fue efectiva durante este período. Esto no quiere decir que el concepto
 de {\gam} sea erróneo, sino que el ambiente en el cual fue implementado no ayudó
 al éxito de éste. Factores como la falta de difusión de la tienda online,
@@ -103,7 +104,7 @@ desarrolló una encuesta y ésta es explicada en el capítulo a continuación.
 
 \section{Encuesta}
 
-Para complementar el presente trabajo, se realizó una encuesta con el objetivo de
+Para complementar el presente trabajo, se realizó una encuesta, anexo \ref{AnexoI}, con el objetivo de
 conocer el conocimiento general de las personas con respecto a la existencia
 de las técnicas asociadas a {\gam}.
 Por otro lado, se aprovechó la oportunidad para saber cuáles son las preferencias
@@ -135,9 +136,8 @@ se necesitan al menos 165 personas encuestadas para obtener una encuesta válida
 y que la muestra de población obtenida se una muestra representativa de la
 población total.
 
-Como se mencionó anteriormente, la encuesta fue difundida vía redes sociales,
-y fue realizada utilizando la plataforma Google Form para un fácil análisis y
-almacenamiento de todas las respuestas.
+La encuesta fue difundida vía redes sociales, y fue realizada utilizando la plataforma Google 
+Form para un fácil análisis y almacenamiento de todas las respuestas.
 
 La encuesta fue respondida por 180 personas, y los resultados obtenidos son
 descritos y analizados a continuación.
@@ -149,47 +149,29 @@ restante son mujeres.
 Los rangos de edades de los encuestados van desde los 18 a 32 años,
 estando el $99\%$ de las personas dentro de este rango.
 
-Analizando la pregunta número $3$ \ref{fig:chart5.3},
-¿Está al tanto de lo que es {\GAM}/Ludificación?, se obtiene que  un 56\% de los
-encuestados ya tiene algún conocimiento sobre {\GAM}, mostrado en el
-gráfico~\ref{fig:chart5.1}.
+Analizando la pregunta número $3$, ¿Está al tanto de lo que es {\gam}/Ludificación?, se obtiene que  un 57\% 
+de los encuestados ya tiene algún conocimiento sobre {\gam}, mostrado en el cuadro \ref{tab:Pregmulti}.
 Esta información es relevante al momento de implementar una solución gamificada.
-Teniendo en cuenta que un gran porcentaje de la población de muestra es joven
-se puede infiere que es la población con una capacidad mayor de aceptar el
-concepto de {\GAM} al ser implementado como solución, en este caso en el
+Teniendo en cuenta que un gran porcentaje de la población de la muestra es joven,
+se puede inferir que es la población con una capacidad mayor de aceptar el
+concepto de {\gam} al ser implementado como solución, en este caso en el
 contexto de ventas \emph{on-line}.
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_1.png}
-    \caption[chart5.1]{Respuesta a pregunta $3$, conocimiento de {\GAM}.}
-    \label{fig:chart5.1}
-    %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
 
 La siguiente pregunta,
 ¿Usted acumula puntos de grandes empresas?, fue creada con el motivo de reforzar
-al usuario una forma de {\GAM} con la cual se relaciona frecuentemente y así dar
+al usuario una forma de {\gam} con la cual se relaciona frecuentemente y así dar
 a entender de mejor forma el concepto.
-En esta se obtiene un resultado similar al obtenido en la pregunta anterior,
-donde un 56\% contesta positivamente, como la figura  \ref{fig:chart5.2} lo muestra.
-Con esta respuesta se ratifica que existe algún conocimiento sobre {\GAM} por parte
-mas de la mitad de los encuestados, además se demuestra que han interactuado con
+En ésta se obtiene un resultado similar al de la pregunta anterior,
+donde un 56\% contesta positivamente, como se muestra en el cuadro \ref{tab:Pregmulti} .
+Con esta respuesta se ratifica que existe algún conocimiento sobre {\gam} por parte
+de más de la mitad de los encuestados, además se demuestra que han interactuado con
 ella de alguna forma.
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_2.png}
-    \caption[chart5.2]{Respuesta a pregunta 4, acumulación de puntos.}
-    \label{fig:chart5.2}
-    %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
 
 Las preguntas 5 y 6 son exclusivas para las personas que respondieron positivamente
 la pregunta anterior (número 4).
 Estas preguntas no son obligatorias por lo cual la muestra poblacional
 es menor a la obtenida en la encuesta, ambas tienen universos diferentes.
-En la primera existen $92$ encuestados que constituyen el 100\%, figura  \ref{fig:chart5.3}.
+En la primera existen $92$ encuestados que constituyen el 100\%, cuadro \ref{tab:Pregmulti}.
 Esta pregunta tiene como objetivo conocer si los encuestados están en conocimiento
 de los beneficios entregados por las empresas.
 Con 69 personas contestando positivamente, equivalente a 75\%, se puede apreciar
@@ -197,187 +179,136 @@ que los encuestados tienen conocimientos del fin detrás de la acumulación de p
 y es esto lo que crea el motivo de volver y seguir comprando en una tienda
 \emph{on-line} o presencial.
 
-La siguiente pregunta tiene un universo de 101 personas, figura  \ref{fig:chart5.4},
-del cual un 78\% contesto de forma positiva.
+La siguiente pregunta tiene un universo de 101 personas, cuadro \ref{tab:Pregmulti},
+del cual un 79\% contestó de forma positiva.
 Con esto se remarca que los encuestados están en conocimiento de toda la
 información necesaria para motivarlos a seguir y conquistar su meta.
 
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_3.png}
-    \caption[chart5.3]{Respuesta a pregunta 5, conocimiento de beneficios.}
-    \label{fig:chart5.3}
-    %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_4.png}
-    \caption[chart5.4]{Respuesta a pregunta 6, utilización de los beneficios.}
-    \label{fig:chart5.4}
-    %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-
 La siguiente pregunta,
 ¿Qué beneficios prefiere o preferiría obtener?,
-tiene como objetivo conocer los  beneficios mas atractivos para el usuario.
-Esta pregunta es del tipo \emph{Likert}\footnote{http://en.wikipedia.org/wiki/Likert\_scale}, 
-consta de una escala de preferencia de
+tiene como objetivo conocer los  beneficios más atractivos para el usuario.
+Esta pregunta es del tipo \emph{Likert} \cite{likert} consta de una escala de preferencia de
 1 a 5, siendo 1 la preferencia menos interesante y 5 la más interesante.
-El beneficio con mas preferencias 5, o mas interesante para los encuestados,
-es la obtención de descuentos en dinero con un 79\%, \ref{fig:chart5.4}.
-El siguiente beneficio con mas interesados es la adquisición de descuentos para
-próximas compras con un 32\%, figura \ref{fig:chart5.5} de los encuestados.
+El beneficio con mas preferencias $5$, o más interesante para los encuestados,
+es la obtención de descuentos en dinero con un 80\%, cuadro \ref{tab:Preg7}.
+El siguiente beneficio con más interesados es la adquisición de descuentos para
+próximas compras con un 32\%, cuadro \ref{tab:Preg7}, de los encuestados.
 Una información importante obtenida es que una de las herramientas más utilizadas,
 obtención de puntos, es resentida por las personas debido a que existe un mayor
-rechazo, 22\%, que aceptación, 18\%, pero la diferencia no es sustantiva para
+rechazo, 23\%, que aceptación, 17\%, pero la diferencia no es sustantiva para
 descartarla como método a utilizar.
-El beneficio mas rechazado, mayor cantidad de 1, fue la obtención de un
+El beneficio más rechazado, mayor cantidad de 1, fue la obtención de un
 reconocimiento por tabla de posiciones con un 81\%.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_5.png}
-  \caption[chart5.5]{Respuesta a pregunta 7, cantidad de preferencias a beneficio de precios bajos.}
-  \label{fig:chart5.5}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_6.png}
-  \caption[chart5.6]{Respuesta a pregunta 7, cantidad de preferencias a beneficio de acumulación de puntos.}
-  \label{fig:chart5.6}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_7.png}
-  \caption[chart5.7]{Respuesta a pregunta 7, cantidad de preferencias a beneficio de descuento en
-próximas compras.}
-  \label{fig:chart5.7}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_8.png}
-  \caption[chart5.8]{Respuesta a pregunta 7, cantidad de preferencias a beneficio de reconocimiento
-publico según tabla de posiciones.}
-  \label{fig:chart5.8}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-
-La pregunta 8,
-¿Cuál es su preferencia a la hora de realizar compras?,
-muestra cual es la preferencia a la hora de comprar, presencial u \emph{on-line}.
-La preferencia mas seleccionada, por 134 personas, fue la opción de compra
-presencial.
-Esto indica que en Chile no se acostumbra a comprar vía internet y esto representa
-una oportunidad de negocio debido al incremento de alfabetización digital y
-con esto el aumento del acceso al internet.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_9.png}
-  \caption[chart5.9]{Respuesta a pregunta 8, preferencia al momento de comprar.}
-  \label{fig:chart5.9}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-Una vez respondida la pregunta anterior se le expone al usuario, en la pregunta 9,
-si preferiría utilizar un sitio de ventas \emph{on-line} convencional, sólo es utilizado
-para la transacción entre cliente y empresa, o un sitio el cual ofrezca
-herramientas de {\GAM}.
-Con un 69\% seleccionan una tienda con {\GAM} como la alternativa preferida.
-Con este resultado se remarca la utilización de este concepto con el fin de atraer
-a nuevos usuarios.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_10.png}
-  \caption[chart5.10]{Respuesta a pregunta 9, preferencia al momento de comprar de forma \emph{on-line}.}
-  \label{fig:chart5.10}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-
-La pregunta 10 intenta ratificar una de las mayores ideas tras la utilización
-de {\GAM}, la motivación.
-Este sentimiento se crea en el usuario con el fin de atraer y retener a este
-cliente.
-Se obtuvo que 122 personas han creado este sentimiento que los impulsa a volver
-a utilizar o comprar en la tienda implementada con {\GAM}.
-Esta información es bastante importante al momento de implementar una solución
-gamificada y aun mas cuando se trata de comercio electrónico.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_11.png}
-  \caption[chart5.11]{Respuesta a pregunta 10, motivación para volver a comprar en una misma tienda.}
-  \label{fig:chart5.11}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-Por último,
-se intenta obtener una idea de que contextos podrían ser interesantes para
-implementar una solución gamificada.
-Con esto en mente, la más votada fue el contexto social con 109 preferencias,
-seguida por educación con 100 encuestados.
-Con esta información se pueden inferir ideas para desarrollos futuros en esta área.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{images/Graficos/graf_5_12.png}
-  \caption[chart5.12]{Respuesta a pregunta 11, contextos a los cuales se le podría implementar {\GAM}.}
-  \label{fig:chart5.12}
-  %\url{http://www.chartgo.com/get.do?id=69b1dc7d4e}
-\end{figure}
-
-Luego de realizar la implementación {\GAM} sobre una tienda \emph{on-line} y con los datos
-obtenidos mediante la encuesta realizada se obtuvo bastante información para
-analizar y obtener conclusiones que ayudaran a futuras empresas que quieran
-utilizar este concepto en sus empresas. También se obtiene información para guiar
-trabajos futuros en otros contextos.
 
 \begin{table}[h]
 \centering
 \footnotesize
-\setlength\extrarowheight{5pt}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+ & \multicolumn{6}{c|}{{\bf Preferencias(\%)}} \\
+\hline
+{\bf Opciones} & {\bf 1} & {\bf 2} & {\bf 3} & {\bf 4} & {\bf 5} & {\bf Total}\\
+\hline
+Precios Bajos & 1\% & 1\% & 5\% & 13\% & 80\% & 180\\
+\hline
+Acumulación de puntos & 23\% & 22\% & 21\% & 17\% & 17\% & 180\\
+\hline
+Descuentos en compras & 7\% & 14\% & 18\% & 29\% & 32\% & 180\\
+\hline
+Obtención de productos exclusivos & 24\% & 17\% & 25\% & 16\% & 18\% & 180\\
+\hline
+Reconocimiento publico & 82\% & 7\% & 6\% & 2\% & 3\% & 180\\
+\hline
+\end{tabular}
+\caption{Tabla de respuestas para pregunta numero 7}
+\label{tab:Preg7}
+\end{table}
+
+La pregunta 8, cuadro \ref{tab:Preg8},
+¿Cuál es su preferencia a la hora de realizar compras?,
+muestra las preferencias  de compra, presencial u \emph{on-line}.
+La preferencia más seleccionada, por 134 personas, fue la opción de compra
+presencial.
+Esto indica que en Chile no se acostumbra a comprar vía Internet y esto representa
+una oportunidad de negocio debido al incremento de alfabetización digital y
+con esto el aumento del acceso a Internet.
+
+\begin{table}[h]
+\centering
+\footnotesize
+\begin{tabular}{|p{6cm}|c|c|c|}
+\hline
+{\bf Pregunta} & {\bf Presencial (persona a persona)(\%)} & {\bf On-line (vía internet)(\%)} & {\bf Total}\\
+\hline
+¿Cuál es su preferencia a la hora de realizar compras?& 26\% & 74\% & 180 \\
+\hline
+\end{tabular}
+\caption{Tabla de respuesta para pregunta numero 8}
+\label{tab:Preg8}
+\end{table}
+
+
+Una vez respondida la pregunta anterior se le expone al usuario, en la pregunta 9,
+si preferiría utilizar un sitio de ventas \emph{on-line} convencional, sólo es utilizado
+para la transacción entre cliente y empresa, o un sitio el cual ofrezca
+herramientas de {\gam}.
+Con un 69\% seleccionan una tienda con {\gam} como la alternativa preferida.
+Con este resultado se remarca la utilización de este concepto con el fin de atraer
+a nuevos usuarios.
+
+\begin{table}[h]
+\centering
+\footnotesize
+\begin{tabular}{|p{6cm}|c|c|c|}
+\hline
+Pregunta & Tienda on-line con gamificación(\%) & Tienda on-line convencional(\%) & Total\\
+\hline
+¿Prefiere un sitio de ventas on-line con "Gamification" o un sitio convencional?& 69\% & 31\% & 180 \\
+\hline
+\end{tabular}
+\caption{Tabla de respuesta para pregunta numero 9}
+\label{tab:Preg9}
+\end{table}
+
+
+La pregunta 10, cuadro \ref{tab:Pregmulti}, intenta ratificar una de las mayores ideas tras la utilización
+de {\gam}, la motivación.
+Este sentimiento se crea en el usuario con el fin de atraer y retener clientes.
+Se obtuvo que 122 personas han creado este sentimiento que los impulsa a volver
+a utilizar o comprar en la tienda implementada con {\gam}.
+Esta información es bastante importante al momento de implementar una solución
+gamificada y aún más cuando se trata de comercio electrónico.
+
+\begin{table}[h]
+\centering
+\footnotesize
 \begin{tabular}{| p{6cm} | c | c | c |}
 \hline
                           Pregunta
                         & Si(\%)
                         & No(\%)
-                        & Total preferencias \\ \hline
+                        & Total \\ \hline
 ¿Está al tanto de lo que es {\gam} - ludificación?&57\%&43\%&180 \\ \hline
 ¿Usted acumula puntos de grandes empresas?&56\%&44\%&180 \\ \hline
 ¿Está al tanto de los beneficios que dicha empresa le ofrece?&75\%&25\%&92 \\ \hline
 ¿Ha utilizado éstos beneficios en algún momento?&79\%&21\%&100 \\ \hline
 ¿Cree usted que el uso de {\gam} lo motiva a volver a la tienda?&68\%&32\%&180 \\ \hline
 \end{tabular}
-\caption{Tabla de comparación entre los sistemas bases investigados}
-\label{tab:comp_tools}
+\caption{Tabla de respuestas para preguntas numero 3, 4, 5, 6, 10 }
+\label{tab:Pregmulti}
 \end{table}
 
-\begin{table}[h]
-\centering
-\begin{tabular}{|l|c|c|c|c|c|c|}
-\hline
- & \multicolumn{6}{c}{Preferencias(Cantidad)} \\
-\hline
-{\bf Opciones} & {\bf 1} & {\bf 2} & {\bf 3} & {\bf 4} & {\bf 5} & {\bf Total}\\
-\hline
-Precios Bajos & 2 & 2 & 9 & 23 & 144 & 180\\
-\hline
-Acumulación de puntos & 40 & 39 & 38 & 31 & 32 & 180\\
-\hline
-Descuentos en compras & 13 & 25 & 33 & 51 & 58 & 180\\
-\hline
-Reconocimiento publico & 147 & 13 & 12 & 3 & 5 & 180\\
-\hline
-\end{tabular}
-\end{table}
+
+Por último,
+se intenta obtener una idea de qué contextos podrían ser interesantes para
+implementar una solución gamificada.
+Con esto en mente, la más votada fue el contexto social con 109 preferencias,
+seguida por educación con 100 encuestados.
+Con esta información se pueden inferir ideas para desarrollos futuros en esta área.
+
+Luego de realizar la implementación {\gam} sobre una tienda \emph{on-line} y con los datos
+obtenidos mediante la encuesta realizada, se cuenta con bastante información para
+analizar y obtener conclusiones que ayudarán a futuras empresas que quieran
+utilizar este concepto. También se obtiene información para guiar
+trabajos futuros en otros contextos.
+
