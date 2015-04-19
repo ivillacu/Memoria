@@ -164,8 +164,10 @@ Agradecimientos
 \beforepreface
   \listoftables
   \listoffigures
-%  \listofalgorithms
-%\input{agradecimientos.tex}
+
+\prefacesection{Abstract}
+\input{include/abstract}
+\prefacesection{Resumen}
 \input{include/abstract}
 \afterpreface
 \onehalfspacing
@@ -194,12 +196,18 @@ Agradecimientos
 \label{ch:conclusiones}
     \input{include/conclusiones}
 
+\appendix
+\chapter{Encuesta}
+\label{ch:anexos}
+    \input{include/anexoEncuesta}
+\chapter{Gráficos}
+\label{ch:anexos}
+    \input{include/anexoGraficos}
+
+
 \singlespacing
 \bibliographystyle{plain}
 \bibliography{references}
 
-\chapter{Anexos}
-\label{ch:anexos}
-    \input{include/anexobkp}
 \end{document}
 

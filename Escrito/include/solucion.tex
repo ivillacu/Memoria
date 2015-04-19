@@ -8,7 +8,7 @@ referente a comercio electrónico con sus pares mayores.
 Para dar solución a la problemática de las micro empresas,
 que consiste en atraer y retener clientes, para así poder competir
 con empresas de mayor tamaño, tiene como base el uso de una herramienta
-OpenSource, para así crear una tienda virtual atractiva a los usuarios
+\emph{OpenSource}, para así crear una tienda virtual atractiva a los usuarios
 y que pueda estar a la altura de grandes sitios web.
 
 Las siguientes características son necesarias para poder implementar un sistema
@@ -68,7 +68,7 @@ sistemas como herramientas para motivar al usuario\cite{SocialMotivation}
 	implementar {\gam}. Es una de las formas más sencillas de empezar
  	a utilizar {\gam}\cite{OnlineComp} y de la cual se pueden basar 
 	otros tipos de recompensas,
-	vease figura \ref{fig:ranking}.
+	véase figura \ref{fig:ranking}.
 
         En el contexto de nuestra solución, esta herramienta consiste en la entrega de
 	puntos por la realización de tareas definidas, como:
@@ -103,7 +103,7 @@ sistemas como herramientas para motivar al usuario\cite{SocialMotivation}
 	usuarios dentro de la web\cite{BehaviorBadges}.
 
         Dentro de la solución se implementará la entrega de medallas (\emph{achievements})
-	coleccionables entregada a los clientes por cumplir con tareas definidas, vease
+	coleccionables entregada a los clientes por cumplir con tareas definidas, véase
 	figura \ref{fig:achievement}, como:
 
         \begin{itemize}
@@ -121,15 +121,15 @@ sistemas como herramientas para motivar al usuario\cite{SocialMotivation}
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.9\textwidth]{images/Tienda/Tienda_achievement.png}
-  \caption[Achievement]{Achievements del sistema.}
+  \caption[Logros del sistema]{Achievements del sistema.}
   \label{fig:achievement}
 \end{figure}
 
 
 
-    \item {\bf Referals (Referencias):}
+    \item {\bf \emph{Referals} (Referencias):}
         Invitaciones de usuarios de la tienda que son entregadas a posibles
-        clientes para que estos conozcan y compren en la tienda, vease figura 
+        clientes para que estos conozcan y compren en la tienda, véase figura 
 	\ref{fig:referal}.
         Esta herramienta entrega un beneficio mutuo tanto al que hizo la invitación
         como al invitado. Esta recompensa es un cupón de descuento de 500 puntos.
@@ -144,7 +144,7 @@ sistemas como herramientas para motivar al usuario\cite{SocialMotivation}
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.9\textwidth]{images/Tienda/Tienda_referal.png}
-  \caption[Referal]{Refer a Friend del sistema.}
+  \caption[\emph{Refer a friend} del sistema]{Refer a Friend del sistema.}
   \label{fig:referal}
 \end{figure}
 
@@ -223,7 +223,7 @@ Wordpress +\newline Woocommerce & 4 & 5 & 2 & Si tiene plugins,\newline Gratuita
 \section{Herramientas}
 
 Para implementar la solución propuesta se utilizan diferentes herramientas.
-En un principio se penso en el desarrollo completo de las
+En un principio se pensó en el desarrollo completo de las
 tareas requeridas, pero luego de investigar el estado del arte de estas tecnologías,
 se tomó la decisión de utilizar herramientas ya disponibles que tuviesen
 características similares a las requeridas en donde su modificación requeriría
@@ -232,17 +232,17 @@ Otra característica que ayudó al cambio de paradigma fue que en todas las
 herramientas a utilizar, existe una comunidad altamente activa que da soporte y que
 llegaría a ser útil al momento de configurar o modificar alguna de éstas.
 
-La base del sistema utilizado es Wordpress, por ser uno de los
+La base del sistema utilizado es \emph{Wordpress}, por ser uno de los
 CMS~\footnote{Content management system o Sistema de gestión de contenidos}
 más famosos, y ampliamente utilizado\cite{CmsPerformance}.
 
 Esta herramienta permite crear una web para manejar contenidos de una forma fácil,
 tanto la instalación como la administración de las funcionalidades básicas del sistema.
 
-Wordpress posee una fase de instalación sencilla debido a que los recursos
+\emph{Wordpress} posee una fase de instalación sencilla debido a que los recursos
 necesarios son pocos. Se necesita poseer un \emph{hosting} donde alojar el sitio y
-dominio, además de una base de datos relacional, como MySQL o PostgreSQL, que en la mayoria
-de las ocaciones es ofrecida por el mismo hosting.
+dominio, además de una base de datos relacional, como MySQL o PostgreSQL, que en la mayoría
+de las ocasiones es ofrecida por el mismo \emph{hosting}.
 Una gran ventaja de esta herramienta es que al necesitar recursos básicos,
 servidor web y base de datos relacional, puede ser instalado de manera fácil en la
 mayoría de los \emph{hostings} a nivel mundial.
@@ -252,10 +252,10 @@ tanto para la configuración inicial del sistema, como para la modificación
 de algunas características importantes, desde el contenido, hasta el tema
 y diseño del sitio.
 
-Las características principal de Wordpress, que ha ganado mediante
+Las características principal de \emph{Wordpress}, que ha ganado mediante
 la comunidad detrás del proyecto, es la variedad de plugins, que
 tienen tanto un proceso de instalación fácil, como su administración,
-la cual sigue los mismos principios de administración de Wordpress.
+la cual sigue los mismos principios de administración de \emph{Wordpress}.
 Dichos plugins, son el elemento distintivo de cada CMS
 y en nuestro caso, han sido los actores principales para aplicar
 todos los elementos de {\GAM} en el sistema web.
@@ -263,7 +263,7 @@ todos los elementos de {\GAM} en el sistema web.
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.9\textwidth]{images/Tienda/Tienda.png}
-  \caption[TemaVisual]{Tema visual utilizado, vista de la tienda.}
+  \caption[Tema visual tienda.]{Tema visual utilizado, vista de la tienda.}
   \label{fig:Players}
 \end{figure}
 
@@ -273,7 +273,7 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
 
 \begin{itemize}
 
-    \item {\bf Woocommerce:}
+    \item {\bf \emph{Woocommerce}:}
         Es un reconocido módulo que ayuda al usuario a crear una tienda de
         ventas \emph{on-line} de forma rápida y sin costo.
         Al ser integrado al sistema, lo modifica agregando opciones
@@ -283,11 +283,11 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
         para que exista consistencia en el sitio.
         Dichos temas existen tanto gratuitos como de pago.
         El tema escogido es \emph{MyStile}, el cual no posee costo.
-        Woocommerce permite administrar de gran forma las características del
+        \emph{Woocommerce} permite administrar de gran forma las características del
         sistema, al cual se le pueden agregar una colección de plugins que ayudan a
         aumentar las funcionalidades de éste.
 
-    \item {\bf WooCube Pro:}
+    \item {\bf \emph{WooCube Pro}:}
         Módulo, de pago, encargado de la entrega de puntos a los usuarios luego de
         la realización de las tareas definidas.
         A su vez, es el encargado de dar equivalencia a los puntos así como dar
@@ -297,14 +297,14 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
         También incorpora herramientas para realizar y desplegar una tabla
         de posiciones con los usuarios que han obtenido mayor cantidad de puntaje.
 
-    \item {\bf WPAchievement:}
+    \item {\bf \emph{WPAchievement}:}
         Herramienta de pago que entrega la funcionalidad de otorgar achievements,
         logros o medallas a los usuarios luego de realizada alguna de las tareas
         definidas (véase \ref{sec:4.1}).
         Este módulo es el encargado de la entrega de los logros y también del
         guardado de éstos para un futuro despliegue.
 
-    \item {\bf Refer a Friend:}
+    \item {\bf \emph{Refer a Friend}:}
         Plugin responsable de la administración de las invitaciones de los
         clientes a potenciales usuarios.
         A su vez se encarga de entregar los beneficios cuando se realiza la tarea
@@ -318,32 +318,32 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
 La seguridad es utilizada a lo largo del sistema para evitar robo de información o 
 fraude por personas externas. 
 
-En el sistema propuesto se utilizo la seguridad por defecto que trae incoporada
-el sistema base, \emph{Wordpress}, ademas de utilizar \emph{Secure Socket Layer}, SSL, para el
- intercambio de información encriptada. Las caracteristicas de seguridad son:
+En el sistema propuesto se utilizo la seguridad por defecto que trae incorporada
+el sistema base, \emph{Wordpress}, además de utilizar \emph{Secure Socket Layer}, SSL, para el
+ intercambio de información encriptada. Las características de seguridad son:
 
 \begin{itemize}
 
 \item {\bf \emph{Password} encriptada:} Esta es guardada de forma encriptada en la base de datos y solo es 
-	posible verificar el ingreso correcto de esta mediante la compracion del hash.
-\item {\bf Generación automatica de \emph{password}:} Al registrarse un nuevo usuario en el sistema, este 
-	envia una \emph{password} autogenerada con el fin de asegurar la existencia del usuario.
-\item {\bf Persmisos de los archivos en el servidor:} Es utilizado con el objetivo de que solo el creador
-	de los archivos pueda modificarlos. Tambien se desactiva la posibilidad de poder modificarlos
+	posible verificar el ingreso correcto de esta mediante la comparación del \emph{hash}.
+\item {\bf Generación automática de \emph{password}:} Al registrarse un nuevo usuario en el sistema, este 
+	envía una \emph{password} autogenerada con el fin de asegurar la existencia del usuario.
+\item {\bf Permisos de los archivos en el servidor:} Es utilizado con el objetivo de que solo el creador
+	de los archivos pueda modificarlos. También se desactiva la posibilidad de poder modificarlos
 	mediante el \emph{browser} de Internet.
 \item {\bf Utilización de SSL:} Se utiliza para poder establecer una conexión segura entre el servidor web
 	y el \emph{browser} de Internet. Mediante esto se asegura el ocultamiento de información
-	importante, como \emph{password}, tarjetas de credito, etc. 
+	importante, como \emph{password}, tarjetas de crédito, etc. 
 \end{itemize}  
 
-Todas formas  de seguridad descritas son basicas para una tienda que utilzara esta solución. Existen 
+Todas formas  de seguridad descritas son básicas para una tienda que utilizara esta solución. Existen 
 otras formas de seguridad que pueden ser añadidas para aumentar el nivel de seguridad del sistema:
 
 \begin{itemize}
 
 \item {\bf Restricción de privilegios en base de datos:} Remover los privilegios \emph{Drop}, 
 \emph{Alter} y \emph{Revoke} de los usuarios de la base de datos y solo dejarlos en el usuario
-unico de administración.
+único de administración.
 
 \item {\bf Seguridad en el directorio \emph{wp-admin}:} Utilizado como una barrera extra de seguridad,
 por el lado de servidor, para la administración del sistema. Para realizar esto se puede utilizar 
@@ -353,22 +353,22 @@ administración dejen de funcionar, como puede ser el \emph{AJAX Handler}.
 \end{itemize}
 
 Toda la seguridad descrita previamente ayuda a cuidar la información importante que maneja el sistema 
-tanto al iniciar sesion en la tienda como al intercambiar datos confidenciales con los diferentes 
-metodos de pago que pusiese tener la tienda.
+tanto al iniciar sesión en la tienda como al intercambiar datos confidenciales con los diferentes 
+métodos de pago que pusiese tener la tienda.
 
 \section{Administración}
 
-Una de las caracteristicas para seleccionar el sistema base fue la facilidad de 
-administracion de éste. Con esto en cuenta, una vez implementadas todas las herramientas la
+Una de las características para seleccionar el sistema base fue la facilidad de 
+administración de éste. Con esto en cuenta, una vez implementadas todas las herramientas la
 dificultad inicial entregada por \emph{Wordpress} se ve incrementada, debido a la necesidad de adquirir los 
-conocimientos sobre la administración de la herramienta que entrega la funcionalidad de tienda electronica,
+conocimientos sobre la administración de la herramienta que entrega la funcionalidad de tienda electrónica,
  \emph{Woocommerce}. Observando este incremento y sabiendo que con esto la curva de aprendizaje se
 ve incrementada se puede determinar dos posibles casos de usuario final:
 
 \begin{itemize}
 
-\item {\bf Usuario \underline{con} conocimiento sobre \emph{Wordpress}:} Una persona que tenga conocimientos basicos 
-sobre la administracion del sistema base antes de implementar la solución no tendria mayores problemas de
+\item {\bf Usuario \underline{con} conocimiento sobre \emph{Wordpress}:} Una persona que tenga conocimientos básicos 
+sobre la administración del sistema base antes de implementar la solución no tendría mayores problemas de
 adquirir los conocimientos nuevos y poder administrar personalmente la tienda virtual.
 
 \item {\bf Usuario \underline{sin} conocimiento sobre \emph{Wordpress}:} Debido a que la persona que desea administrar
@@ -377,20 +377,20 @@ la tienda virtual requiere conocimientos sobre el sistema base antes de adquirir
 
 \end{itemize}  
 
-Finalmente, un usuario con los conocimientos basicos sobre la administración de la tienda puede hacerce cargo de ésta
+Finalmente, un usuario con los conocimientos básicos sobre la administración de la tienda puede hacerse cargo de ésta
 sin problemas. Se espera que un usuario adquiera estos conocimientos en un periodo de uno a tres meses dependiendo
 del tiempo dedicado a éste. Durante éste tiempo se recomienda contar con el apoyo de un profesional. 
 
 \section{Internacionalización}
 
 Uno de los temas importantes a la hora de implementar la solución es la traducción al idioma principal, español, 
- de las herramientas. Algunas de estas poseen soporte oficial de idioma español y en las demas fue necesario 
-realizar una traducción directamente en el codigo fuente. Las herramientas con soporte oficial son:
+ de las herramientas. Algunas de estas poseen soporte oficial de idioma español y en las demás fue necesario 
+realizar una traducción directamente en el código fuente. Las herramientas con soporte oficial son:
 
 \begin{itemize}
 
-\item Wordpress.
-\item Woocommerce.
+\item \emph{Wordpress}.
+\item \emph{Woocommerce}.
 
 \end{itemize}
 
@@ -398,16 +398,16 @@ Las herramientas que no poseen soporte son:
 
 \begin{itemize}
 
-\item WooCube Pro.
-\item WPAchievement.
-\item Refer a Friend.
-\item Tema visual MyStile.
+\item \emph{WooCube Pro}.
+\item \emph{WPAchievement}.
+\item \emph{Refer a Friend}.
+\item Tema visual \emph{MyStile}.
 
 \end{itemize}
 
-La internacionalizacion de las harrmientas con soporte es una tarea compleja y que consume una cantidad
-de tiempo grande. Esta dificultad se vio reflejada en que las harramientas fueron traducidas en una gran
-parte pero no en su totalidad debido a que existe una parte de la información que se presenta con imagenes
+La internacionalización de las herramientas con soporte es una tarea compleja y que consume una cantidad
+de tiempo grande. Esta dificultad se vio reflejada en que las herramientas fueron traducidas en una gran
+parte pero no en su totalidad debido a que existe una parte de la información que se presenta con imágenes
 digitales las cuales al ser modificadas pierden el atractivo por el cual existen.
 
 
@@ -421,7 +421,7 @@ también se puede utilizar para extrapolar ideas sobre la utilización de {\gam}
 ventas presenciales.
 
 La encuesta tiene como objetivo principal saber si la gente, en primer lugar, tiene conocimiento
-de que ya ha utilizado, de algún modo, {\gam}, ya sea en el supermercado, tiendas de retail,
+de que ya ha utilizado, de algún modo, {\gam}, ya sea en el supermercado, tiendas de \emph{retail},
 farmacias, etc. Luego se pregunta si han obtenido o tienen información de cómo obtener alguno
 de los beneficios dados en estas tiendas y también se les presenta una escala para poder medir
 el nivel de aceptación de beneficios entregados a través de {\gam}.
