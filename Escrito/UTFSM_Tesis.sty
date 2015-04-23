@@ -338,7 +338,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
 \def\phd{\degree{Doctor en Ingenier\'ia Inform\'atica}\degreeinitial{Ph.D.}\ph@dtrue}
 \def\ma{\degree{Master of Arts}\degreeinitial{M.A.}}
 \def\ingej{\degree{Ingeniero en Ejecución}\degreeinitial{Ing.Ej.}}
-\def\ingciv{\degree{Ingeniero Civil}\degreeinitial{Ing.Civ.}}
+\def\ingciv{\degree{Ingeniero Civil en Informática}\degreeinitial{Ing.Civ.}}
 \ingciv % grado por defecto
 % modificado por fsaravia: falta el acento en magíster
 \def\magister{\degree{Mag\'ister en Ciencias de la Ingeniería Informática}\degreeinitial{Mg.}\ph@dtrue}
@@ -406,7 +406,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     \end{center}
     \vfill
     \begin{center}
-        \large\rm Tesis presentada como requerimiento parcial\\
+        \large\rm Memoria presentada como requerimiento parcial\\
         \large\rm para optar al grado acad\'emico de\\
         \vskip0.2in
         \Large \uppercase\expandafter{\@degree} \\
@@ -511,7 +511,7 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     \pagenumbering{roman}
     \pagestyle{plain}
     \titlep
-    \iffront@pages\signaturepage\else\addtocounter{page}{1}\fi
+    %\iffront@pages\signaturepage\else\addtocounter{page}{1}\fi
     %\ifpermission\permissionpage\else
     \addtocounter{page}{1} %\fi
     \iffront@pages\ifdedic@tion

@@ -1,4 +1,4 @@
-\documentclass[11pt,letterpaper]{report}
+\documentclass[11pt,letterpaper,twoside,openright]{report}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 
@@ -166,7 +166,7 @@ Agradecimientos
   \listoffigures
 
 \prefacesection{Abstract}
-\input{include/abstract}
+\input{include/abstractEN}
 \prefacesection{Resumen}
 \input{include/abstract}
 \afterpreface
@@ -196,6 +196,10 @@ Agradecimientos
 \label{ch:conclusiones}
     \input{include/conclusiones}
 
+\singlespacing
+\bibliographystyle{plain}
+\bibliography{references}
+
 \appendix
 \chapter{Encuesta}
 \label{ch:anexos}
@@ -203,11 +207,6 @@ Agradecimientos
 \chapter{Gráficos}
 \label{ch:anexos}
     \input{include/anexoGraficos}
-
-
-\singlespacing
-\bibliographystyle{plain}
-\bibliography{references}
 
 \end{document}
 

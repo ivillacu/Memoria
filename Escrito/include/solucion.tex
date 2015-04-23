@@ -55,12 +55,15 @@ poder alcanzar, de cierta forma, el nivel de visitas y ventas de estos grandes
 sitios web.
 
 Para ayudar a disminuir la brecha entre la solución propuesta y una tienda virtual
-de gran tamaño utilizaremos el concepto de {\GAM}.
+de gran tamaño utilizaremos el concepto de {\gam}.
 Este concepto ayudará a la tienda a atraer y retener clientes con la utilización
 de elementos de los juegos, que ya se han mencionado en este documento,
 de los cuales se han seleccionado los siguientes elementos, como parte
 de un esquema clave a implementar. Estos ya han sido utilizados y probados en diversos
-sistemas como herramientas para motivar al usuario\cite{SocialMotivation}
+sistemas como herramientas para motivar al usuario\cite{SocialMotivation}.
+
+Todas las caracteristicas de cada elemento seleccionado fueron previamente discutido con el
+usuario del sistema, dueño de la tienda ``Kurgan''. 
 
 \begin{itemize}
     \item {\bf Puntuación:}
@@ -165,7 +168,7 @@ Para poder elegir entre estos sistemas, se proponen las siguientes métricas:
 \begin{itemize}
 
     \item {\bf Facilidad de instalación:}
-        Esta métrica muestra el nivel de conocimientos que se debe
+        Esta métrica muestra el nivel de conocimiento que se debe
         tener para poder realizar una instalación completa y exitosa del sistema.
         También demuestra que tanta ayuda existe durante la misma (comentarios,
         ejemplos, etc).
@@ -318,13 +321,13 @@ Los plugins utilizados en nuestro sistema, son los siguientes:
 La seguridad es utilizada a lo largo del sistema para evitar robo de información o 
 fraude por personas externas. 
 
-En el sistema propuesto se utilizo la seguridad por defecto que trae incorporada
+En el sistema propuesto se utilizo la seguridad por omisión que trae incorporada
 el sistema base, \emph{Wordpress}, además de utilizar \emph{Secure Socket Layer}, SSL, para el
  intercambio de información encriptada. Las características de seguridad son:
 
 \begin{itemize}
 
-\item {\bf \emph{Password} encriptada:} Esta es guardada de forma encriptada en la base de datos y solo es 
+\item {\bf \emph{Password} cifrada:} Esta es guardada de forma encriptada en la base de datos y solo es 
 	posible verificar el ingreso correcto de esta mediante la comparación del \emph{hash}.
 \item {\bf Generación automática de \emph{password}:} Al registrarse un nuevo usuario en el sistema, este 
 	envía una \emph{password} autogenerada con el fin de asegurar la existencia del usuario.
@@ -438,4 +441,3 @@ personas que tienen conocimiento del concepto.
 base del concepto es que el cliente sea atraído y que vuelva a comprar en la tienda. Esta pregunta
 tiene como objetivo encontrar si se crea en las personas la motivación para volver.
 \end{itemize}
-
