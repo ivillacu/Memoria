@@ -1,8 +1,7 @@
-\beamer@endinputifotherversion {3.26pt}
-\beamer@sectionintoc {1}{Presentación actividad}{2}{0}{1}
-\beamer@sectionintoc {2}{Introducción}{8}{0}{2}
-\beamer@sectionintoc {3}{\emph {Gamification}}{27}{0}{3}
-\beamer@sectionintoc {4}{Problemática}{33}{0}{4}
-\beamer@sectionintoc {5}{Solución Propuesta}{38}{0}{5}
-\beamer@sectionintoc {6}{Elements}{51}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{66}{0}{7}
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introducción}{2}{0}{1}
+\beamer@sectionintoc {2}{\emph {Gamification}}{21}{0}{2}
+\beamer@sectionintoc {3}{Problemática}{27}{0}{3}
+\beamer@sectionintoc {4}{Solución Propuesta}{32}{0}{4}
+\beamer@sectionintoc {5}{Resultados}{50}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{62}{0}{6}
