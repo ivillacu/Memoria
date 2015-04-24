@@ -515,11 +515,11 @@ con el estilo de documento `report'}{Usted debería leer la documentación de UT
     %\ifpermission\permissionpage\else
     \addtocounter{page}{1} %\fi
     \iffront@pages\ifdedic@tion
-        \newpage \begin{flushright}
-        \ \vskip5in
-        \Large\em\null\vskip1in
+        \newpage \vspace*{\fill}
+        %\ \vskip5in
+        %\Large\em\null\vskip1in
         \dedication@text
-        \end{flushright}
+        \vspace*{\fill}
     \fi\fi
 
 
