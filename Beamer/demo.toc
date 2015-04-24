@@ -4,5 +4,5 @@
 \beamer@sectionintoc {3}{\emph {Gamification}}{27}{0}{3}
 \beamer@sectionintoc {4}{Problemática}{33}{0}{4}
 \beamer@sectionintoc {5}{Solución Propuesta}{38}{0}{5}
-\beamer@sectionintoc {6}{Elements}{46}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{61}{0}{7}
+\beamer@sectionintoc {6}{Elements}{51}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{66}{0}{7}
