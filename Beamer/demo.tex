@@ -6,6 +6,8 @@
 \usepackage[scale=2]{ccicons}
 \usepackage{minted}
 \usepackage{tabularx}
+\usepackage{color}
+
 
 \usepgfplotslibrary{dateplot}
 
@@ -28,20 +30,20 @@
 
 \begin{columns}[onlytextwidth]
  \column{0.5\textwidth}
-  \begin{itemize}[<+- | alert@+>]
+  \begin{itemize}
     \item Motivación.
     \item \emph{Gamification}
-	\begin{itemize}[<+- | alert@+>]
+	\begin{itemize}
 	  \item Definición.
 	  \item Usos cotidianos.
 	\end{itemize}
     \item Problemática:
-	\begin{itemize}[<+- | alert@+>]
+	\begin{itemize}
           \item Definición.
           \item Tienda ayudante.
         \end{itemize}
     \item Solución propuesta:
-	\begin{itemize}[<+- | alert@+>]
+	\begin{itemize}
           \item Descripción.
           \item Sistema Base.
 	  \item Herramientas utilizadas.
@@ -50,9 +52,9 @@
 \end{itemize}
 
  \column{0.5\textwidth}
-  \begin{itemize}[<+- | alert@+>]
+  \begin{itemize}
     \item Datos Experimentales:
-	\begin{itemize}[<+- | alert@+>]
+	\begin{itemize}
           \item Resultados implementación.
           \item Resultados encuesta.
         \end{itemize}
@@ -76,9 +78,8 @@ al mercado nacional.
  \column{0.5\textwidth}
 \begin{figure}
 \centering
-    \includegraphics[width=0.8\textwidth]{images/SalesDashboard.jpg}
-    \caption{Dashboard sistema de ventas.}
-    \label{fig:awesome_image}
+    \includegraphics[width=1\textwidth]{images/pymes.jpg}
+    \label{fig:awesom_image}
 \end{figure}
 \end{columns}
 \end{frame}
@@ -87,51 +88,50 @@ al mercado nacional.
 
 \begin{frame}[fragile]
   \frametitle{Definición}
-  \begin{description}
-    \item[\textbf{\emph{Gamification}}] ``Es el uso de elementos del diseño de juego en contextos diferentes al de 
-juego''.
-  \end{description}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Definición}
+     ``Es el uso de elementos del diseño de juego en contextos diferentes al de juego''.
 
 \begin{description}
- \item[\textbf{Juego}] En primer lugar este concepto se refiere al juego en su totalidad, y no a la acción de jugar. 
-Este concepto es caracterizado por un conjunto de reglas explicitasıcitas, que crean un ambiente en donde los 
-jugadores buscan la competición para completar objetivos y metas.
- \item[\textbf{Elementos del diseño de juego}] Los elementos a utilizar son característicos a los juegos, que se 
-encuentran en la mayoría de ellos y que cumplen un rol importante en su jugabilidad.
+ \item[\textbf{Juego}] Conjunto de reglas explicitasícitas, que crean un ambiente de competición.
+ \item[\textbf{Elementos del diseño de juego}] Se encuentran en la mayoría de juegos y cumplen un rol importante 
+en su jugabilidad.
  \item[\textbf{Contextos diferentes al de juego}] Existe fuera de un juego o de un ambiente que contiene gamification.
 \end{description}
 \end{frame}
 
 \begin{frame}
  \frametitle{Usos cotidianos}
-\begin{columns}[onlytextwidth]
-\column{0.5\textwidth}
-
-        \begin{itemize}[<+- | alert@+>]
+\begin{center}
+        \begin{itemize}
           \item Puntos \emph{retail}.
           \item Canje de productos.
 	  \item Obtención de logros.
         \end{itemize}
+\end{center}
 
+\begin{columns}[onlytextwidth]
 \column{0.5\textwidth}
 \begin{figure}
 \centering
     \includegraphics[width=0.8\textwidth]{images/retail.png}
-    \caption{Puntos mas utilizados.}
+    \caption{Puntos mas utilizados en Chile.}
     \label{fig:awesome_image}
 \end{figure}
+
+\column{0.5\textwidth}
+\begin{figure}
+\centering
+    \includegraphics[width=0.8\textwidth]{images/gamAll.jpg}
+    \caption{\emph{Gamification} en el mundo.}
+    \label{fig:awesome_image}
+\end{figure}
+
 \end{columns}
 \end{frame}
 
 \section{Problemática}
 \begin{frame}
 \frametitle{Definición}
-        \begin{itemize}[<+- | alert@+>]
+        \begin{itemize}
           \item Diferencias entre PyMes y grandes empresas, en ventas \emph{on-line}, debido a la diferencia de recursos.
 	  \item PyMe y empleos.
 	  \item Acceso de PyMe a tecnologías actuales para venta \emph{on-line}.
@@ -142,7 +142,7 @@ encuentran en la mayoría de ellos y que cumplen un rol importante en su jugabil
 \centering
 \begin{tabular}{|l|c|c|c|}
 \hline
-{\bf Empresa}  & {\bf Número de Trabajadores} & {\bf Porcentaje de ocupación} & {\bf Ventas anuales}\\
+{\bf Empresa}  & {\bf \# de Trabajadores} & {\bf \% de ocupación} & {\bf Ventas anuales}\\
 \hline
 Micro    & 1 a 4                & 44.4\%  & menos de 2400 UF\\
 \hline
@@ -159,7 +159,7 @@ Grande   & más de 199           & 10\%  & más de 100000 UF\\
 \end{frame}
 
 \begin{frame}
- \frametitle{Tienda}
+ \frametitle{Aplicación real}
 
 Se contó con la ayuda de la tienda ``Kurgan''. Esta cedió el espacio para implementar el sistema de ventas 
 propuesto como solución.
@@ -176,7 +176,7 @@ propuesto como solución.
 \column{0.5\textwidth}
 \begin{figure}
 \centering
-    \includegraphics[width=0.8\textwidth]{images/mapa.png}
+    \includegraphics[width=1.0\textwidth]{images/mapa.png}
     \caption{Ubicación tienda ``Kurgan''}
     \label{fig:awesome_image}
 \end{figure}
@@ -189,9 +189,9 @@ propuesto como solución.
 \begin{frame}
  \frametitle{Descripción}
 
-\begin{itemize}[<+- | alert@+>]
+\begin{itemize}
  \item Sistema de ventas \emph{on-line}.
- \item Fácil administración.
+ \item Interfaz de administración simple.
  \item Utilización de \emph{gamification} para atraer y retener clientes.
 \end{itemize}
 \end{frame}
@@ -200,44 +200,66 @@ propuesto como solución.
  \frametitle{Características Solución}
 \begin{description}
  \item[\textbf{Bajo costo}] Debido a los escasos recursos que poseen las PyMes es necesario e importante que
-la solución tenga requiera los mínimos recursos posibles.
- \item[\textbf{Facilidad de configuración}] El sistema debe poder ser configurado por el usuario.
- \item[\textbf{Facilidad de administración}] El sistema debe poder ser administrado por el usuario.
+la solución requiera los mínimos recursos posibles.
+ \item[\textbf{Facilidad de configuración y administración}] El usuario no requiere mayores conocimientos al momento
+de configurar y administrar.
 \end{description}
 \end{frame}
 
 \begin{frame}
  \frametitle{Características Sistema Base}
 
-\begin{itemize}[<+- | alert@+>]
+\begin{itemize}
  \item Facilidad de instalación.
  \item Facilidad de administración.
  \item Actualizaciones y comunidad activa.
- \item Características utilizables.
- \item Traducciones.
+ \item Complementos Ad-hoc.
+ \item Disponibilidad en varios idiomas.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
  \frametitle{Sistema Base}
 
-\begin{figure}
-\centering
-    \includegraphics[width=0.9\textwidth]{images/tablaWord.png}
-    \caption{Tabla comparativa de sistemas bases.}
-    \label{fig:awesome_image}
-\end{figure}
+\begin{table}[h]
+\footnotesize
+\setlength\extrarowheight{5pt}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{| p{2.5cm} | p{1.8cm} | p{2.5cm} | p{2.8cm} | p{2.5cm} | p{2cm} |}
+\hline
+                        & Dificultad de\newline Instalación
+                        & Dificultad de\newline Administración
+                        & Actualizaciones y\newline Comunidad
+                        & Complementos\newline Ad-hoc
+                        & Disponibilidad\newline Idiomas\\ \hline
+
+Magento                 & 7 & 8 & 8 & Si tiene plugins,\newline Alto costo & Parcialmente \vspace{0.2cm} \\ \hline
+Prestashop              & 6 & 7 & 9 & No tiene plugins                     & Si    \vspace{0.2cm}\\ \hline
+Wordpress +\newline Woocommerce & 4 & 5 & 2 & Si tiene plugins,\newline Gratuitas,\newline Bajo costo,\newline Alto Costo & Si\\ \hline
+\end{tabular}}
+\caption{Tabla de comparación entre los sistemas bases investigados}
+\label{tab:comp_tools}
+\end{table}
+
+%\begin{figure}
+%\centering
+%    \includegraphics[width=0.9\textwidth]{images/tablaWord.png}
+%    \caption{Tabla comparativa de sistemas bases.}
+%    \label{fig:awesome_image}
+%\end{figure}
 
 \end{frame}
 
 \begin{frame}
  \frametitle{Herramientas Utilizadas}
 
-\begin{itemize}[<+- | alert@+>]
- \item Woocommerce: Herramienta que modifica el sistema base en tienda on-line.
- \item WooCube Pro: Plugin dedicado a la entrega y guardado de los puntos.
- \item WPAchievement: Da la funcionalidad de entregar logros al realizar completamente una tarea.
- \item Refer a Friend: Herramienta que ayuda al usuario a invitar a amigos y obtener beneficios con ésto.
+Las siguientes son las herramientas utilizadas para demostrar las ideas tras \emph{gamification}
+
+\begin{itemize}
+ \item \textbf{Woocommerce}: Herramienta que modifica el sistema base a una tienda on-line.
+ \item \textbf{WooCube Pro}: Plugin dedicado al manejo de puntos.
+ \item \textbf{WPAchievement}: Da la funcionalidad de entregar logros al realizar completamente una tarea.
+ \item \textbf{Refer a Friend}: Herramienta que ayuda al usuario a invitar a amigos y obtener beneficios.
 \end{itemize}
 \end{frame}
 
@@ -246,7 +268,7 @@ la solución tenga requiera los mínimos recursos posibles.
 
 Encuesta con los objetivos:
 
-\begin{itemize}[<+- | alert@+>]
+\begin{itemize}
  \item Apoyo de la investigación.
  \item Conocimiento de la población sobre \emph{gamification}.
  \item Interacción de la población con \emph{gamification}.
@@ -269,32 +291,31 @@ En primera instancia, se debió establecer los beneficios a entregar:
 \end{frame}
 
 \begin{frame}
- \frametitle{Resultados Implementación - Pre-\emph{Gamification}}
+ \frametitle{Resultados Implementación}
 
+\begin{block}{Pre-\emph{Gamification}}
 Antes de implementar \emph{gamification} se obtuvieron datos por $30$ días para poder
 compararlos una vez el sistema completo fuera implementado.
+\end{block}
 
-\begin{itemize}
-    \item \textbf{Cantidad de visitas:} 315 (visitas únicas).
-    \item \textbf{Cantidad de lecturas:} 445.
-    \item \textbf{Cantidad de usuarios inscritos:} 0.
-    \item \textbf{Cantidad de ventas realizadas:} 0.
-\end{itemize}
+%\begin{itemize}
+%    \item \textbf{Cantidad de visitas:} 315 (visitas únicas).
+%    \item \textbf{Cantidad de lecturas:} 445.
+%    \item \textbf{Cantidad de usuarios inscritos:} 0.
+%    \item \textbf{Cantidad de ventas realizadas:} 0.
+%\end{itemize}
 
-\end{frame}
-
-\begin{frame}
- \frametitle{Resultados Implementación - Post-\emph{Gamification}}
-
+\begin{block}{Post-\emph{Gamification}}
 Una vez terminada la etapa de recolección de datos, se implemento \emph{gamification}. Esta
 etapa tuvo una duración de $30$ días y se obtuvieron los siguientes datos:
+\end{block}
 
-\begin{itemize}
-    \item \textbf{Cantidad de visitas:} 476 (visitas únicas).
-    \item \textbf{Cantidad de lecturas:} 641.
-    \item \textbf{Cantidad de usuarios inscritos:} 0.
-    \item \textbf{Cantidad de ventas realizadas:} 0.
-\end{itemize}
+%\begin{itemize}
+%    \item \textbf{Cantidad de visitas:} 476 (visitas únicas).
+%    \item \textbf{Cantidad de lecturas:} 641.
+%    \item \textbf{Cantidad de usuarios inscritos:} 0.
+%    \item \textbf{Cantidad de ventas realizadas:} 0.
+%\end{itemize}
 
 \end{frame}
 
@@ -307,7 +328,7 @@ Al analizar los datos se puede concluir lo siguiente:
 \begin{itemize}[<+- | alert@+>]
  \item Aumento en la cantidad de visitas.
  \item No hubo aumento de usuarios registrados.
- \item Implementación de \emph{gamification} no fue efectiva.
+ \item Implementación de \emph{gamification} \color{red}{no fue efectiva.}
 \end{itemize}
 
 \begin{table}[h]
@@ -316,7 +337,7 @@ Al analizar los datos se puede concluir lo siguiente:
 \resizebox{\linewidth}{!}{
 \begin{tabular}{|l|c|c|c|c|}
 \hline
-  & {\bf Cantidad de visitas} & {\bf Cantidad de lecturas} & {\bf Cantidad de usuarios inscritos} & {\bf Cantidad de ventas realizadas}\\
+  & {\bf \# visitas} & {\bf \# lecturas} & {\bf \# usuarios inscritos} & {\bf \# ventas realizadas}\\
 \hline
 Pre Implementación    & 315  & 445  & 0 & 0\\
 \hline
@@ -377,7 +398,7 @@ Se realizo una encuesta para complementar la información obtenida:
 \resizebox{\linewidth}{!}{
 \begin{tabular}{|p{5cm}|c|c|c|}
 \hline
-{\bf Pregunta} & {\bf Presencial (persona a persona)(\%)} & {\bf On-line (vía internet)(\%)} & {\bf Total}\\
+{\bf Pregunta} & {\bf Presencial } & {\bf On-line } & {\bf Total}\\
 \hline
 ¿Cuál es su preferencia a la hora de realizar compras?& 26\% & 74\% & 180 \\
 \hline
@@ -387,18 +408,13 @@ Se realizo una encuesta para complementar la información obtenida:
 \end{table}
 
 
-\end{frame}
-
-\begin{frame}
- \frametitle{Resultados Encuesta}
-
 \begin{table}[h]
 \centering
 \footnotesize
 \resizebox{\linewidth}{!}{
 \begin{tabular}{|p{4cm}|c|c|c|}
 \hline
-{\bf Pregunta} & {\bf Tienda on-line con \emph{gamification}(\%)} & {\bf Tienda on-line convencional(\%)} & {\bf Total}\\
+{\bf Pregunta} & {\bf Tienda on-line con \emph{gamification}} & {\bf Tienda on-line convencional} & {\bf Total}\\
 \hline
 ¿Prefiere un sitio de ventas on-line con \emph{gamification} o un sitio convencional?& 69\% & 31\% & 180 \\
 \hline
@@ -446,11 +462,13 @@ Reconocimiento publico & 82\% & 7\% & 6\% & 2\% & 3\% & 180\\
  \frametitle{Conclusiones}
 
 \begin{itemize}
-\item \emph{Gamification} es una herramienta útil para mejorar ventas.
-\item Las herramientas utilizadas son suficientes para una PyMe.
-\item El usuario del sistema web debe creer en él. Con esto poder entregar beneficios que al cliente 
-le sean atractivos 
+\item \emph{Gamification} es util para las PyMes para poder atraer la atención de nuevos clientes..
+\item Las herramientas utilizadas son adecuadas para una PyMe.
+\item Es fundamental la participación y fomento del uso del sistema gamificado por el cliente y con esto
+ entregar beneficios que al cliente le sean atractivos.
 \item La población ya conoce el concepto y le atrae que las empresas lo utilicen.
+\item Finalmente, los beneficios entregados regularmente son bastante atractivos pero la manera de entregarlos
+debiese ser modificada.
 \end{itemize}
 \end{frame}
 
@@ -459,14 +477,14 @@ le sean atractivos
 
 \begin{itemize}
 
-\item Realizar un análisis de estrategias de marketing que ayuden, en un inicio, a promocionar la nueva 
+\item Realizar un \textbf{análisis de estrategias de marketing} que ayuden, en un inicio, a promocionar la nueva 
 implementación de \emph{gamification} en una tienda virtual.
-\item Implementación de los otros sistemas bases con el objetivo de realizar una comparación mas exhaustiva
+\item Implementación de los otros sistemas bases con el objetivo de realizar una \textbf{comparación exhaustiva}
 de estas herramientas.
-\item Investigar y utilizar otra forma de entrega de beneficios.
+\item Investigar y utilizar \textbf{otra forma de entrega de beneficios}.
 \end{itemize}
 \end{frame}
 
-\plain{¿Preguntas?}
+\maketitle
 
 \end{document}

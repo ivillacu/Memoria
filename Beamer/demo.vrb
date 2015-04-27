@@ -1,6 +1,9 @@
 \frametitle{Definición}
-  \begin{description}
-    \item[\textbf{\emph{Gamification}}] ``Es el uso de elementos del diseño de juego en contextos diferentes al de
-juego''.
-  \end{description}
+     ``Es el uso de elementos del diseño de juego en contextos diferentes al de juego''.
 
+\begin{description}
+ \item[\textbf{Juego}] Conjunto de reglas explicitasícitas, que crean un ambiente de competición.
+ \item[\textbf{Elementos del diseño de juego}] Se encuentran en la mayoría de juegos y cumplen un rol importante
+en su jugabilidad.
+ \item[\textbf{Contextos diferentes al de juego}] Existe fuera de un juego o de un ambiente que contiene gamification.
+\end{description}
