@@ -3,3 +3,9 @@
 *.un~
 *.bak
 memoria_pregrado.pdf
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb

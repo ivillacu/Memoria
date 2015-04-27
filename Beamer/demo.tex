@@ -1,98 +1,93 @@
 \documentclass[10pt, compress]{beamer}
-
 \usetheme{m}
-
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
 \usepackage{minted}
 \usepackage{tabularx}
 \usepackage{color}
 
-
 \usepgfplotslibrary{dateplot}
-
 \usemintedstyle{trac}
 
 \title{Evaluación estratégica del uso de Gamification en ventas \emph{on-line}}
 \subtitle{}
 \date{27 de Abril, 2015}
-\author{Ignacio j. Villacura de la Paz}
+\author{Ignacio J. Villacura de la Paz}
 \institute{Departamento de Informática\\ Universidad Técnica Federico Santa María}
 
 \begin{document}
-
 \maketitle
 
 \section{Introducción}
-
 \begin{frame}[fragile]
-  \frametitle{Contenidos}
-
-\begin{columns}[onlytextwidth]
- \column{0.5\textwidth}
-  \begin{itemize}
-    \item Motivación.
-    \item \emph{Gamification}
-	\begin{itemize}
-	  \item Definición.
-	  \item Usos cotidianos.
-	\end{itemize}
-    \item Problemática:
-	\begin{itemize}
-          \item Definición.
-          \item Tienda ayudante.
-        \end{itemize}
-    \item Solución propuesta:
-	\begin{itemize}
-          \item Descripción.
-          \item Sistema Base.
-	  \item Herramientas utilizadas.
-	  \item Encuesta evaluativa.
-        \end{itemize}
-\end{itemize}
-
- \column{0.5\textwidth}
-  \begin{itemize}
-    \item Datos Experimentales:
-	\begin{itemize}
-          \item Resultados implementación.
-          \item Resultados encuesta.
-        \end{itemize}
-    \item Conclusiones.
-    \item Trabajos futuros.
-  \end{itemize}
-\end{columns}
+    \frametitle{Contenidos}
+    \begin{columns}[onlytextwidth]
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item Motivación.
+                \item \emph{Gamification}
+                \begin{itemize}
+                    \item Definición.
+                    \item Usos cotidianos.
+                \end{itemize}
+                \item Problemática:
+                \begin{itemize}
+                    \item Definición.
+                    \item Tienda ayudante.
+                \end{itemize}
+                \item Solución propuesta:
+                \begin{itemize}
+                    \item Descripción.
+                    \item Sistema Base.
+                    \item Herramientas utilizadas.
+                    \item Encuesta evaluativa.
+                \end{itemize}
+            \end{itemize}
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item Datos Experimentales:
+                \begin{itemize}
+                    \item Resultados implementación.
+                    \item Resultados encuesta.
+                \end{itemize}
+                \item Conclusiones.
+                \item Trabajos futuros.
+            \end{itemize}
+        \end{columns}
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{Motivación}
-\begin{columns}[onlytextwidth]
- \column{0.5\textwidth}
-\begin{itemize}
-\item Entrada de multinacionales \\
-al mercado nacional.
-\item PyMe. 
-\item E-commerce y autogestión.
-\end{itemize}
+    \frametitle{Motivación}
+    \begin{columns}[onlytextwidth]
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item Entrada de multinacionales \\
+                      al mercado nacional.
+                \item PyMe.
+                \item E-commerce y autogestión.
+            \end{itemize}
 
- \column{0.5\textwidth}
-\begin{figure}
-\centering
-    \includegraphics[width=1\textwidth]{images/pymes.jpg}
-    \label{fig:awesom_image}
-\end{figure}
-\end{columns}
+        \column{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=1\textwidth]{images/pymes.jpg}
+                \label{fig:awesom_image}
+            \end{figure}
+    \end{columns}
 \end{frame}
 
 \section{\emph{Gamification}}
 
 \begin{frame}[fragile]
   \frametitle{Definición}
-     ``Es el uso de elementos del diseño de juego en contextos diferentes al de juego''.
+    \begin{center}
+        \emph{``Es el uso de elementos del diseño de juego en contextos diferentes
+        al de juego''}
+    \end{center}
 
 \begin{description}
  \item[\textbf{Juego}] Conjunto de reglas explicitas, que crean un ambiente de competición.
- \item[\textbf{Elementos del diseño de juego}] Se encuentran en la mayoría de juegos y cumplen un rol importante 
+ \item[\textbf{Elementos del diseño de juego}] Se encuentran en la mayoría de juegos y cumplen un rol importante
 en su jugabilidad.
  \item[\textbf{Contextos diferentes al de juego}] Existe fuera de un juego o de un ambiente que contiene \emph{gamification}.
 \end{description}
@@ -153,7 +148,7 @@ Mediana  & 50 a 199             & 13\%  & 25001 a 100000 UF\\
 Grande   & más de 199           & 10\%  & más de 100000 UF\\
 \hline
 \end{tabular}
-\caption{Tamaño de empresa según cantidad de empleados.}
+\caption{Tamaño de empresa según cantidad de empleados. (SOFOFA)}
 \label{tab:tam_empresa}
 \end{table}
 \end{frame}
@@ -161,7 +156,7 @@ Grande   & más de 199           & 10\%  & más de 100000 UF\\
 \begin{frame}
  \frametitle{Aplicación real}
 
-Se contó con la ayuda de la tienda ``Kurgan''. Esta cedió el espacio para implementar el sistema de ventas 
+Se contó con la ayuda de la tienda ``Kurgan''. Esta cedió el espacio para implementar el sistema de ventas
 propuesto como solución.
 
 \begin{columns}[onlytextwidth]
@@ -202,7 +197,7 @@ propuesto como solución.
  \item[\textbf{Bajo costo}] Debido a los escasos recursos que poseen las PyMes es necesario e importante que
 la solución requiera los mínimos recursos posibles.
  \item[\textbf{Facilidad de configuración y administración}] El usuario no requiere mayores conocimientos al momento
-de configurar y administrar.
+de configurar y administrar el sistema.
 \end{description}
 \end{frame}
 
@@ -225,11 +220,11 @@ de configurar y administrar.
 \footnotesize
 \setlength\extrarowheight{5pt}
 \resizebox{\linewidth}{!}{
-\begin{tabular}{| p{2.5cm} | p{1.8cm} | p{2.5cm} | p{2.8cm} | p{2.5cm} | p{2cm} |}
+\begin{tabular}{| p{1.8cm} | p{1.6cm} | p{1.8cm} | p{1.8cm} | p{2.0cm} | p{1.8cm} |}
 \hline
                         & Dificultad de\newline Instalación
                         & Dificultad de\newline Administración
-                        & Actualizaciones y\newline Comunidad
+                        & Actualizaciones\newline y Comunidad
                         & Complementos\newline Ad-hoc
                         & Disponibilidad\newline Idiomas\\ \hline
 
@@ -334,6 +329,7 @@ Al analizar los datos se puede concluir lo siguiente:
 \begin{table}[h]
 \footnotesize
 \centering
+
 \resizebox{\linewidth}{!}{
 \begin{tabular}{|l|c|c|c|c|}
 \hline
@@ -353,7 +349,7 @@ Post Implementación  & 476 & 641  & 0 & 0\\
 \begin{frame}
  \frametitle{Resultados Encuesta}
 
-Debido a que los datos no fueron concluyentes para decir si \emph{gamification} es una herramienta útil. 
+Debido a que los datos no fueron concluyentes para decir si \emph{gamification} es una herramienta útil.
 Se realizo una encuesta para complementar la información obtenida:
 
 \begin{itemize}
@@ -477,7 +473,7 @@ debiese ser modificada.
 
 \begin{itemize}
 
-\item Realizar un \textbf{análisis de estrategias de marketing} que ayuden, en un inicio, a promocionar la nueva 
+\item Realizar un \textbf{análisis de estrategias de marketing} que ayuden, en un inicio, a promocionar la nueva
 implementación de \emph{gamification} en una tienda virtual.
 \item Implementación de los otros sistemas bases con el objetivo de realizar una \textbf{comparación exhaustiva}
 de estas herramientas.
